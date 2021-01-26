@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> AT Bank | </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+      
+    <link rel="stylesheet" href="css/style.css">
+    <title> AT Bank | Make Your life Easy</title>
 </head>
 <body>
+
+    <!-- login area -->
+    <section class="container">
+        <div class="login-form" id="login">
+            <div class="submit-area " >
+                <h1 class="text-center">Welcome to AT Bank!</h1>
+                <div class="login-area">
+                    <h4 class="mb-4">Login</h4>
+                    <input type="email" class="form-control mb-3" placeholder="please inter your email address....">
+                    <input type="password" class="form-control mb-4" placeholder="please inter your password....">
+                    <button id="login-button" class="btn btn-success">Enter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transaction Area -->
+    <section class="container">
+        <div id="transaction-area" class="transaction">
+            
+            <div class="row mt-5">
+                <div class="col-md-4 ">
+                    <div class="m-3 deposit rounded text-white p-4">
+                        <h5>Deposit</h5>
+                        <h2>$ <span id="currentDeposit">00</span> </h2>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="m-3 withdraw rounded text-white p-4">
+                        <h5>Withdraw</h5>
+                        <h2>$ <span id="currentWithdraw">00</span> </h2>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="m-3 balance rounded text-white p-4">
+                        <h5>Balance</h5>
+                        <h2>$ <span id="currentBalance">15000</span> </h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Withdraw area -->
+    <section class="container">
+        <div id="withdraw-area" class="transaction">
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="login-area" >
+                        <h4 class="mb-4">Deposit</h4>
+                        <input id="deposit-amount" type="number" class="form-control mb-3" placeholder="$ amount you want to deposit...." required>
+                        <button id="deposit-button" class="btn btn-success">Deposit</button>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="login-area ">
+                        <h4 class="mb-4">Withdraw</h4>
+                        <input id="withdraw-amount" type="number" class="form-control mb-3" required placeholder="$ amount you want to withdraw...." >
+                        <button id="withdraw-button" class="btn btn-success">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
+
+   
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
