@@ -1,0 +1,134 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   margin: 0;
+   padding: 0;
+   font-size: 16px;
+   line-height: 1.5em;
+}
+h1{
+    font-size: 40px;
+    
+}
+h2{
+    font-size: 25px;
+}
+.highlight{
+    color: orange;
+}
+.half-width{
+    
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 2%;
+}
+.half-width img{
+    width: 100%;
+}
+.top-banner{
+    
+    background-image: url("images/top-banner.png");
+    background-repeat: no-repeat;
+}
+section{
+   
+    min-height: 500px;
+    
+}
+.link-button{
+    text-decoration: none;
+    background-image: linear-gradient(45deg, lightsalmon, tomato);
+    padding: 5px 10px;
+    border:2px solid orange;
+    border-radius: 4px;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;}
+
+.dream-area{
+    margin-top: 100px;
+    background-image: url("images/dream-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.box{
+    background-color: white;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 5px;
+    height: 80%;
+}
+#main-section{
+    
+    background-image: url("images/exp-bg.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+#full-stack{
+    
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, lightsalmon, orange);
+    border-image-slice: 1;
+}
+#half-stack{
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, blue, cyan);
+    border-image-slice: 1;
+}
+
+footer{
+    text-align: center;
+    background-color: rgba(200, 255, 0, 0.541);
+    margin: 20px 0 0 0;
+    padding: 10px 0;
+    font-weight: 700;
+}
+a{
+    padding: 5px 10px 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+li{
+    padding-top: 2px;
+    display: inline-block;
+    list-style-type: none;
+}
+header{
+    margin: 0;
+    padding: 0;
+}
+ul{
+  
+    margin: 0;
+    padding-left: 1000px;
+}
+.navbar{
+    
+    min-height: 50px;
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    background-color: rgba(200, 255, 0, 0.541);
+
+
+}
+li:hover{
+    background-color: rgba(200, 255, 0, 0.623);
+    border: 1px solid rgba(132, 165, 42, 0.5);
+    border-radius: 3px;
+}
+.link-button a:hover{
+    background-color: coral;
+}
+.address{
+    min-height: 50px;
+    margin: 0 0 0 50px;
+}
+.address p{
+    margin: 0;
+}
+
+ 
+
+
+

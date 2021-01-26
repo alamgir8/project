@@ -1,0 +1,27 @@
+ .card-image{
+    max-width: 25%;
+    height: auto;
+}
+
+
+.bg-hightlight{
+    
+    background-color: #faf7f6;
+    
+    
+}
+section{
+    
+    padding: 100px 0;
+}
+
+.button{
+    
+    background-color: #ff136f;
+}
+.hightlight{
+    color: #ff136f;
+}
+.nav-p{
+    line-height: 1em;
+}
