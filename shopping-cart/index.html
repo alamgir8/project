@@ -87,11 +87,11 @@
 
          //for delete first section 
          document.getElementById('delete-button').addEventListener('click', function () {
-            document.getElementById('first-section').style.display = 'none';    
+         document.getElementById('first-section').style.display = 'none';    
          })
          //for delete second section
          document.getElementById('delete-button-2').addEventListener('click', function () {
-            document.getElementById('second-section').style.display = 'none';
+         document.getElementById('second-section').style.display = 'none';
          })
 
 /*=====================================for delete section end====================================*/
@@ -102,67 +102,90 @@
 
          //for add button with subtotal and total change value for phone
          document.getElementById('add-button').addEventListener('click', function () {
-          
-         updatedTotalPrice('add-reduce', 'totalPrice',  Math.round(1*1.1), Math.round(1*1219.1), 1*1219, 1*25);
-      })
+         updatedPriceAfterAdd('100', 'add-reduce', 'totalPrice',  Math.round(1*1.1), Math.round(1*1219.1), 1*1219, 1*25);
+         })
+
       //reduce button with subtotal and total value change for phone
-      document.getElementById('reduce-button').addEventListener('click', function () {
-      
-         updatedTotalPrice('add-reduce', 'totalPrice',  Math.round(-1*1.2), Math.round(-1*1219.2), -1*1219, -1*25);
-      })
+         document.getElementById('reduce-button').addEventListener('click', function () {
+         updatedPriceAfterReduce('1', 'add-reduce', 'totalPrice',  Math.round(-1*1.2), Math.round(-1*1219.2), -1*1219, -1*25);
+         })
+
 /*======================for add,reduce quantity and price button for phone end here ========================*/
+
 
 
 
 /*=======================for add,reduce quantity and price button for phone cover stat here=================*/
 
       //for add button with subtotal and total change value for casing/phone cover
-      document.getElementById('add-button-2').addEventListener('click', function () {
-         updatedTotalPrice('add-reduce-2','totalPrice-2',  Math.round(1*1.2), Math.round(1*59.2), 1*59, 1*1);
-        
-      })
+         document.getElementById('add-button-2').addEventListener('click', function () {
+         updatedPriceAfterAdd('100', 'add-reduce-2', 'totalPrice-2',  Math.round(1*1.2), Math.round(1*59.2), 1*59, 1*1);
+         })
+
       //reduce button with subtotal and total value change for casing/phone cover
-      document.getElementById('reduce-button-2').addEventListener('click', function () {
-         
-         updatedTotalPrice('add-reduce-2','totalPrice-2',  Math.round(-1*1.1), Math.round(-1*59.1), -1*59, -1*1);
-         
-      })
-/*==========================for add,reduce quantity and price button for phone cover end here=================*/
+         document.getElementById('reduce-button-2').addEventListener('click', function () {
+         updatedPriceAfterReduce('1', 'add-reduce-2' ,'totalPrice-2',  Math.round(-1*1.1), Math.round(-1*59.1), -1*59, -1*1);
+         })
+/*=========================================for add,reduce quantity and price button for phone cover end here===================================*/
 
 
 
-/*===========function for add,reduce quantity and price button for phone & phone cover start here==============*/
-      function updatedTotalPrice(id1, id2, num1, num2, num3, num4) {
-           
-         const Quantity = document.getElementById(id1).value;
-         const Number = parseFloat(Quantity);
-         const totalQuantity = Number + num1;
+/*=======================function for add,reduce quantity and price button for phone & phone cover start here===============================*/
 
-         document.getElementById(id1).value = totalQuantity;
-
-         const price = document.getElementById(id2).innerText;
-         const actualPrice = parseFloat(price) + num2;
-         document.getElementById(id2).innerText = actualPrice;
-            
-         const subAmount = document.getElementById('sub-total').innerText;
-         const subTotal = parseFloat(subAmount.replace(',', '')) + num3;
-         document.getElementById('sub-total').innerText = subTotal;
-
-         const taxAmount = document.getElementById('tax').innerText;
-         const taxNumber = parseFloat(taxAmount);
-         const totalTax = subTotal * (2/100);
-         document.getElementById('tax').innerText = Math.round(totalTax);
-
-         const Total = subTotal + taxNumber + num4;
-         document.getElementById('total').innerText = Total;
+function updatedPriceAfterAdd(max, id, id2, num1, num2, num3, num4) {
+         document.getElementById(id).value = parseInt(document.getElementById(id).value) + num1;
+      if (document.getElementById(id).value >= parseInt(max)) {
+         document.getElementById(id).value = max;  
          }
-        
+         document.getElementById(id2).innerText = parseInt(document.getElementById(id2).innerText) + num2;
+      if (document.getElementById(id2).innerText >= 1) {
+         document.getElementById(id2).innerText + num2;
          
-      
-/*===========function for add,reduce quantity and price button for phone & phone cover end here==============*/
+         }
+         
+         document.getElementById('sub-total').innerText = parseFloat(document.getElementById('sub-total').innerText.replace(',', '')) + num3;
+      if (document.getElementById('sub-total').innerText >= 1) {
+         document.getElementById('sub-total').innerText + num3;
+            
+         }
+         document.getElementById('tax').innerText = parseInt(document.getElementById('tax').innerText) + Math.round(num3*(2/100));
+      if (document.getElementById('tax').innerText >= 1) {
+         document.getElementById('tax').innerText * (2/100);
+        }
 
+         document.getElementById('total').innerText = parseInt(document.getElementById('total').innerText.replace(',', '')) + num3 + Math.round(num3*(2/100)) ; 
+      if (document.getElementById('total').innerText >= 1) {
+         document.getElementById('total').innerText  + num3;
+        }   
+}
 
+function updatedPriceAfterReduce(min, id, id2, num1, num2, num3, num4) {
+         document.getElementById(id).value = parseInt(document.getElementById(id).value) + num1;
+      if (document.getElementById(id).value <= parseInt(min)) {
+         document.getElementById(id).value = min;
+         }
+         document.getElementById(id2).innerText = parseInt(document.getElementById(id2).innerText) + num2;
+      if (document.getElementById(id2).innerText <= 1) {
+         document.getElementById(id2).innerText = 0-num2;
+         return;
+         } 
+   
+         document.getElementById('sub-total').innerText = parseFloat(document.getElementById('sub-total').innerText.replace(',', '')) + num3;
+      if (document.getElementById('sub-total').innerText <= 1) {
+         document.getElementById('sub-total').innerText = 0;  
+         }
 
+         document.getElementById('tax').innerText = parseInt(document.getElementById('tax').innerText) + Math.round(num3*(2/100));
+      if (document.getElementById('tax').innerText <= 1) {
+         document.getElementById('tax').innerText = 0;
+        }
+
+         document.getElementById('total').innerText = parseInt(document.getElementById('total').innerText.replace(',', '')) + num3 + Math.round(num3*(2/100));  
+      if (document.getElementById('total').innerText <= 1) {
+         document.getElementById('total').innerText = 0;
+        }
+}
+/*========================function for add,reduce quantity and price button for phone & phone cover end here===============================*/
       </script>
 
 

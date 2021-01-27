@@ -17,11 +17,11 @@
       
       <div class="input-group mt-5">
           <div class="input-group-btn">
-              <button id="down" class="btn btn-success" onclick=" down('0','myNumber')">ReduceMe</button>
+              <button id="down" class="btn btn-success" >ReduceMe</button>
           </div>
           <input type="text" id="myNumber" class="form-control input-number" value="1" />
           <div class="input-group-btn">
-              <button id="up" class="btn btn-success" onclick="up('', 'myNumber')">AddMe</button>
+              <button id="up" class="btn btn-success" >AddMe</button>
           </div>
       </div>
     </div>
@@ -31,21 +31,37 @@
       
       <div class="input-group mt-5">
           <div class="input-group-btn">
-              <button id="downp" class="btn btn-success" onclick=" down('0', 'myNumber-2')">ReduceMe</button>
+              <button id="down-2" class="btn btn-success" >ReduceMe</button>
           </div>
           <input type="text" id="myNumber-2" class="form-control input-number" value="1" />
           <div class="input-group-btn">
-              <button id="upp" class="btn btn-success" onclick="up('','myNumber-2')">AddMe</button>
+              <button id="up-2" class="btn btn-success" >AddMe</button>
           </div>
       </div>
     </div>
   </section>
 
   <script>
-     document.getElementById('add-button').addEventListener('click', function () {
-       up("myNumber-1")
+     document.getElementById('up').addEventListener('click', function () {
+       up('100', 'myNumber');
+       
 
      });
+     document.getElementById('down').addEventListener('click', function () {
+      
+       down('0', 'myNumber')
+
+     })
+     document.getElementById('up-2').addEventListener('click', function () {
+       up('100', 'myNumber-2');
+       
+
+     });
+     document.getElementById('down-2').addEventListener('click', function () {
+      
+       down('0', 'myNumber-2')
+
+     })
     
     function up(max, id) {
     document.getElementById(id).value = parseInt(document.getElementById(id).value) + 1;
