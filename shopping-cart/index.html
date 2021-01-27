@@ -7,7 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
-   <link href="style.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,11 +25,11 @@
 
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default"><i class="fas fa-minus"></i></button>
-                           <input type="text" class="form-control text-center" value="1">
-                           <button class="btn btn-default"><i class="fas fa-plus"></i></button>
+                           <button id="reduce-button" class="btn btn-default "><i class="fas fa-minus"></i></button>
+                           <input id="add-reduce" type="text" class="form-control text-center" value="1">
+                           <button id="add-button" class="btn btn-default "><i class="fas fa-plus"></i></button>
                         </div>
-                        <h5>$1219</h5>
+                        <h5>$ <span id="totalPrice">1219</span> </h5>
                         <img src="images/remove.png" alt="" class="remove-item">
                      </div>
                   </div>
@@ -43,12 +43,12 @@
                      </div>
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default"><i class="fas fa-minus"></i></button>
-                           <input type="text" class="form-control text-center" value="1">
-                           <button class="btn btn-default"><i class="fas fa-plus"></i></button>
+                           <button id="reduce-button-2" class="btn btn-default "><i class="fas fa-minus"></i></button>
+                           <input id="add-reduce-2" type="text" class="form-control text-center" value="1">
+                           <button id="add-button-2" class="btn btn-default "> <i class="fas fa-plus"></i></button>
 
                         </div>
-                        <h5>$59</h5>
+                        <h5>$ <span id="totalPrice-2">59</span></h5>
                         <img src="images/remove.png" alt="" class="remove-item">
                      </div>
                   </div>
@@ -64,9 +64,9 @@
                      </div>
 
                      <div class="col-md-4 status">
-                        <h5>$1,278</h5>
-                        <h5>$0</h5>
-                        <h5>$1,278</h5>
+                        <h5>$ <span id="sub-total">1,278</span> </h5>
+                        <h5>$ <span id="tax">00</span></h5>
+                        <h5>$ <span id="total">1,278</span></h5>
                      </div>
                   </div>
                </div>
@@ -77,6 +77,147 @@
          </div>
       </div>
    </section>
-</body>
 
+
+
+
+      <script>
+         //for add button with subtotal and total change value for phone
+         document.getElementById('add-button').addEventListener('click', function () {
+            const addQuantity = document.getElementById('add-reduce').value;
+            const addNumber = parseFloat(addQuantity);
+            const totalQuantity = addNumber + 1;
+
+         document.getElementById('add-reduce').value = totalQuantity;
+
+            const price = document.getElementById('totalPrice').innerText;
+            const actualPrice = parseFloat(price);
+            const totalPrice = actualPrice + 1219;
+            document.getElementById('totalPrice').innerText = totalPrice;
+            
+
+           const subAmount = document.getElementById('sub-total').innerText;
+           const subNumber = parseFloat(subAmount.replace(',', ''));;
+           const subTotal = subNumber + 1219;
+           document.getElementById('sub-total').innerText = subTotal;
+
+           const totalAmount = document.getElementById('total').innerText;
+           const totalNumber = parseFloat(totalAmount.replace(',', ''));;
+           const Total = totalNumber + 1219;
+           document.getElementById('total').innerText = Total;
+
+           const taxAmount = document.getElementById('tax').innerText;
+           const taxNumber = parseFloat(taxAmount);
+           const totalTax = Total * (2/100);
+           document.getElementById('tax').innerText = Math.round(totalTax);
+           
+         
+         
+      })
+
+      //reduce button with subtotal and total value change for phone
+      document.getElementById('reduce-button').addEventListener('click', function () {
+         const reduceQuantity = document.getElementById('add-reduce').value;
+         const reduceNumber = parseFloat(reduceQuantity);
+         const quantity = reduceNumber - 1;
+
+         document.getElementById('add-reduce').value = quantity;
+
+         const price = document.getElementById('totalPrice').innerText;
+         const actualPrice = parseFloat(price);
+         const totalPrice = actualPrice - 1219;
+         document.getElementById('totalPrice').innerText = totalPrice;
+
+         const subAmount = document.getElementById('sub-total').innerText;
+         const subNumber = parseFloat(subAmount.replace(',', ''));;
+         const subTotal = subNumber - 1219;
+         document.getElementById('sub-total').innerText = subTotal;
+
+         const totalAmount = document.getElementById('total').innerText;
+         const totalNumber = parseFloat(totalAmount.replace(',', ''));;
+         const Total = totalNumber - 1219;
+         document.getElementById('total').innerText = Total;
+
+         const taxAmount = document.getElementById('tax').innerText;
+         const taxNumber = parseFloat(taxAmount);
+         const totalTax = Total * (2/100);
+         document.getElementById('tax').innerText = Math.round(totalTax);
+
+         
+
+
+      })
+      //for add button with subtotal and total change value for casing/phone cover
+      document.getElementById('add-button-2').addEventListener('click', function () {
+            const addQuantity = document.getElementById('add-reduce-2').value;
+            const addNumber = parseFloat(addQuantity);
+            const totalQuantity = addNumber + 1;
+
+         document.getElementById('add-reduce-2').value = totalQuantity;
+
+            const price = document.getElementById('totalPrice-2').innerText;
+            const actualPrice = parseFloat(price);
+            const totalPrice = actualPrice + 59;
+            document.getElementById('totalPrice-2').innerText = totalPrice;
+            
+
+           const subAmount = document.getElementById('sub-total').innerText;
+           const subNumber = parseFloat(subAmount.replace(',', ''));;
+           const subTotal = subNumber + 59;
+           document.getElementById('sub-total').innerText = subTotal;
+
+           const totalAmount = document.getElementById('total').innerText;
+           const totalNumber = parseFloat(totalAmount.replace(',', ''));;
+           const Total = totalNumber + 59;
+           document.getElementById('total').innerText = Total;
+
+         const taxAmount = document.getElementById('tax').innerText;
+         const taxNumber = parseFloat(taxAmount);
+         const totalTax = Total * (2/100);
+         document.getElementById('tax').innerText = Math.round(totalTax);
+         
+         
+      })
+
+      //reduce button with subtotal and total value change for casing/phone cover
+      document.getElementById('reduce-button-2').addEventListener('click', function () {
+         const reduceQuantity = document.getElementById('add-reduce-2').value;
+         const reduceNumber = parseFloat(reduceQuantity);
+         const quantity = reduceNumber - 1;
+
+         document.getElementById('add-reduce-2').value = quantity;
+
+         const price = document.getElementById('totalPrice-2').innerText;
+         const actualPrice = parseFloat(price);
+         const totalPrice = actualPrice - 59;
+         document.getElementById('totalPrice-2').innerText = totalPrice;
+
+         const subAmount = document.getElementById('sub-total').innerText;
+         const subNumber = parseFloat(subAmount.replace(',', ''));
+         const subTotal = subNumber - 59;
+         document.getElementById('sub-total').innerText = subTotal;
+
+         const totalAmount = document.getElementById('total').innerText;
+         const totalNumber = parseFloat(totalAmount.replace(',', ''));
+         const Total = totalNumber - 59;
+         document.getElementById('total').innerText = Total;
+
+
+         const taxAmount = document.getElementById('tax').innerText;
+         const taxNumber = parseFloat(taxAmount);
+         const totalTax = Total * (2/100);
+         document.getElementById('tax').innerText = Math.round(totalTax);
+
+         
+
+
+      })
+
+
+     
+
+      </script>
+
+
+</body>
 </html>
