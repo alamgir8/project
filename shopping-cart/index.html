@@ -99,17 +99,15 @@
             const addNumber = parseFloat(addQuantity);
             const totalQuantity = addNumber + 1;
 
-         document.getElementById('add-reduce').value = totalQuantity;
+             document.getElementById('add-reduce').value = totalQuantity;
 
             const price = document.getElementById('totalPrice').innerText;
-            const actualPrice = parseFloat(price);
-            const totalPrice = actualPrice + 1219;
-            document.getElementById('totalPrice').innerText = totalPrice;
+            const actualPrice = parseFloat(price) + 1219;
+            document.getElementById('totalPrice').innerText = actualPrice;
             
 
            const subAmount = document.getElementById('sub-total').innerText;
-           const subNumber = parseFloat(subAmount.replace(',', ''));
-           const subTotal = subNumber + 1219;
+           const subTotal = parseFloat(subAmount.replace(',', '')) + 1219;
            document.getElementById('sub-total').innerText = subTotal;
 
 
@@ -118,8 +116,6 @@
            const totalTax = subTotal * (2/100);
            document.getElementById('tax').innerText = Math.round(totalTax);
 
-           const totalAmount = document.getElementById('total').innerText;
-           const totalNumber = parseFloat(totalAmount.replace(',', ''));
            const Total = subTotal + taxNumber + 25;
            document.getElementById('total').innerText = Total;
 
@@ -140,22 +136,21 @@
          document.getElementById('add-reduce').value = quantity;
 
          const price = document.getElementById('totalPrice').innerText;
-         const actualPrice = parseFloat(price);
-         const totalPrice = actualPrice - 1219;
-         document.getElementById('totalPrice').innerText = totalPrice;
+         const actualPrice = parseFloat(price) - 1219;
+         document.getElementById('totalPrice').innerText = actualPrice;
+            
 
          const subAmount = document.getElementById('sub-total').innerText;
-         const subNumber = parseFloat(subAmount.replace(',', ''));
-         const subTotal = subNumber - 1219;
+         const subTotal = parseFloat(subAmount.replace(',', '')) - 1219;
          document.getElementById('sub-total').innerText = subTotal;
+
 
          const taxAmount = document.getElementById('tax').innerText;
          const taxNumber = parseFloat(taxAmount);
          const totalTax = subTotal * (2/100);
          document.getElementById('tax').innerText = Math.round(totalTax);
 
-         const totalAmount = document.getElementById('total').innerText;
-         const totalNumber = parseFloat(totalAmount.replace(',', ''));
+
          const Total = subTotal + taxNumber - 25;
          document.getElementById('total').innerText = Total;
          
@@ -164,34 +159,31 @@
       })
       //for add button with subtotal and total change value for casing/phone cover
       document.getElementById('add-button-2').addEventListener('click', function () {
-            const addQuantity = document.getElementById('add-reduce-2').value;
-            const addNumber = parseFloat(addQuantity);
-            const totalQuantity = addNumber + 1;
+         const addQuantity = document.getElementById('add-reduce-2').value;
+         const addNumber = parseFloat(addQuantity);
+         const totalQuantity = addNumber + 1;
 
          document.getElementById('add-reduce-2').value = totalQuantity;
 
-            const price = document.getElementById('totalPrice-2').innerText;
-            const actualPrice = parseFloat(price);
-            const totalPrice = actualPrice + 59;
-            document.getElementById('totalPrice-2').innerText = totalPrice;
+         const price = document.getElementById('totalPrice-2').innerText;
+         const actualPrice = parseFloat(price) + 59;
+         document.getElementById('totalPrice-2').innerText = actualPrice;
             
 
-           const subAmount = document.getElementById('sub-total').innerText;
-           const subNumber = parseFloat(subAmount.replace(',', ''));
-           const subTotal = subNumber + 59;
-           document.getElementById('sub-total').innerText = subTotal;
+         const subAmount = document.getElementById('sub-total').innerText;
+         const subTotal = parseFloat(subAmount.replace(',', '')) + 59;
+         document.getElementById('sub-total').innerText = subTotal;
 
-           const taxAmount = document.getElementById('tax').innerText;
-           const taxNumber = parseFloat(taxAmount);
-           const totalTax = subTotal * (2/100);
-           document.getElementById('tax').innerText = Math.round(totalTax);
 
-           const totalAmount = document.getElementById('total').innerText;
-           const totalNumber = parseFloat(totalAmount.replace(',', ''));
-           const Total = subTotal + taxNumber + 1;
-           document.getElementById('total').innerText = Total;
-         
-         
+         const taxAmount = document.getElementById('tax').innerText;
+         const taxNumber = parseFloat(taxAmount);
+         const totalTax = subTotal * (2/100);
+         document.getElementById('tax').innerText = Math.round(totalTax);
+
+
+         const Total = subTotal + taxNumber + 1;
+         document.getElementById('total').innerText = Total;
+        
       })
 
       //reduce button with subtotal and total value change for casing/phone cover
@@ -203,29 +195,29 @@
          document.getElementById('add-reduce-2').value = quantity;
 
          const price = document.getElementById('totalPrice-2').innerText;
-         const actualPrice = parseFloat(price);
-         const totalPrice = actualPrice - 59;
-         document.getElementById('totalPrice-2').innerText = totalPrice;
+         const actualPrice = parseFloat(price) - 59;
+         document.getElementById('totalPrice-2').innerText = actualPrice;
+            
 
          const subAmount = document.getElementById('sub-total').innerText;
-         const subNumber = parseFloat(subAmount.replace(',', ''));
-         const subTotal = subNumber - 59;
+         const subTotal = parseFloat(subAmount.replace(',', '')) - 59;
          document.getElementById('sub-total').innerText = subTotal;
 
+
          const taxAmount = document.getElementById('tax').innerText;
-           const taxNumber = parseFloat(taxAmount);
-           const totalTax = subTotal * (2/100);
-           document.getElementById('tax').innerText = Math.round(totalTax);
+         const taxNumber = parseFloat(taxAmount);
+         const totalTax = subTotal * (2/100);
+         document.getElementById('tax').innerText = Math.round(totalTax);
 
-           const totalAmount = document.getElementById('total').innerText;
-           const totalNumber = parseFloat(totalAmount.replace(',', ''));
-           const Total = subTotal + taxNumber - 1;
-           document.getElementById('total').innerText = Total;
+
+         const Total = subTotal + taxNumber - 1;
+         document.getElementById('total').innerText = Total;
          
          
-
 
       })
+
+      
 
 
      
