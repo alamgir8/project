@@ -27,7 +27,7 @@
                         <div class="input-group number-spinner">
                            <button id="reduce-button" class="btn btn-default "><i class="fas fa-minus"></i></button>
                            <input id="add-reduce" type="text" class="form-control text-center" value="1">
-                           <button id="add-button" class="btn btn-default "><i class="fas fa-plus"></i></button>
+                           <button id="add-button" class="btn btn-default "><i class="fas fa-plus" ></i></button>
                         </div>
                         <h5>$ <span id="totalPrice">1219</span> </h5>
                         <img id="delete-button" src="images/remove.png" alt="" class="remove-item">
@@ -43,7 +43,7 @@
                      </div>
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button id="reduce-button-2" class="btn btn-default "><i class="fas fa-minus"></i></button>
+                           <button id="reduce-button-2" class="btn btn-default " ><i class="fas fa-minus"></i></button>
                            <input id="add-reduce-2" type="text" class="form-control text-center" value="1">
                            <button id="add-button-2" class="btn btn-default "> <i class="fas fa-plus"></i></button>
 
@@ -71,7 +71,7 @@
                   </div>
                </div>
                <div class="col-md-12 pt-4 pb-4">
-                  <button type="button" class="btn btn-success check-out">Check Out</button>
+                  <button onclick="window.print()" type="button" class="btn btn-success check-out">Check Out</button>
                </div>
             </div>
          </div>
@@ -95,15 +95,14 @@
          })
 
 /*=====================================for delete section end====================================*/
-
-
+         
 
 
 /*==================for add,reduce quantity and price button for phone stat here==========================*/
 
          //for add button with subtotal and total change value for phone
          document.getElementById('add-button').addEventListener('click', function () {
-
+          
          updatedTotalPrice('add-reduce', 'totalPrice',  Math.round(1*1.1), Math.round(1*1219.1), 1*1219, 1*25);
       })
       //reduce button with subtotal and total value change for phone
@@ -134,6 +133,7 @@
 
 /*===========function for add,reduce quantity and price button for phone & phone cover start here==============*/
       function updatedTotalPrice(id1, id2, num1, num2, num3, num4) {
+           
          const Quantity = document.getElementById(id1).value;
          const Number = parseFloat(Quantity);
          const totalQuantity = Number + num1;
@@ -155,10 +155,13 @@
 
          const Total = subTotal + taxNumber + num4;
          document.getElementById('total').innerText = Total;
-      }  
+         }
+        
+         
+      
 /*===========function for add,reduce quantity and price button for phone & phone cover end here==============*/
 
-     
+
 
       </script>
 
