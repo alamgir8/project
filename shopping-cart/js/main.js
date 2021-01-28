@@ -220,4 +220,13 @@
    /*========================function for add,reduce quantity and price button for phone & phone cover end here===============================*/
 
 
-     
+   function kilometerToMeter(distance) {
+      if(distance>0) {
+      var meter = distance*1000;
+      console.log("Meter = "+meter);
+      }
+      else {
+      console.log("Distance shouldn't negative number,please provdie the correct number.");
+      }
+      console.log(10);
+   }
