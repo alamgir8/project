@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+   <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
@@ -169,6 +172,77 @@
               </div>
         </section>
 
+
+   <section id="shopping-cart">
+      <div >
+        <div class="container" >
+          <div class="cart" >
+             <div class="col-md-12 col-lg-10 mx-auto">
+                <div id="first-section" class="cart-item">
+                   <div class="row">
+                      <div class="col-md-7 center-item">
+                         <img src="images/product-1.png" alt="">
+                         <h2 class="mx-3">iPhone 11 128GB Black</h2>
+                      </div>
+ 
+                      <div class="col-md-5 center-item">
+                         <div class="input-group number-spinner">
+                            <button onclick="productPriceUpdater(false, 'phone')" class="btn btn-success "><i class="fas fa-minus"></i></button>
+                            <input id="phoneCount" type="text" class="form-control text-center" value="1">
+                            <button onclick="productPriceUpdater(true, 'phone')" class="btn btn-success "><i class="fas fa-plus" ></i></button>
+                         </div>
+                         <h2 class="mx-5">$ <span id="phonePrice" >1219</span> </h2>
+                         <img id="delete-button" src="images/remove.png" alt="" class="remove-item mx-4">
+                      </div>
+                   </div>
+                </div>
+ 
+                <div id="second-section" class="cart-item">
+                   <div class="row">
+                      <div class="col-md-7 center-item mx-auto">
+                         <img src="images/product-2.png" alt="">
+                         <h2 class="mx-3">iPhone 11 Silicone Case - Black</h2>
+                      </div>
+                      <div class="col-md-5 center-item">
+                         <div class="input-group number-spinner">
+                            <button onclick="productPriceUpdater(false, 'case')" class="btn btn-success " ><i class="fas fa-minus"></i></button>
+                            <input id="caseCount" type="text" class="form-control text-center" value="1">
+                            <button onclick="productPriceUpdater(true, 'case')" class="btn btn-success "> <i class="fas fa-plus"></i></button>
+ 
+                         </div>
+                         <h2 class="mx-5">$ <span id="casePrice">59</span></h2>
+                         <img id="delete-button-2" src="images/remove.png" alt="" class="remove-item mx-5">
+                      </div>
+                   </div>
+                </div>
+ 
+                <div class="cart-item">
+                   <div class="row">
+ 
+                      <div class="col-md-8">
+                         <h2>Subtotal: </h2>
+                         <h2>Tax: <span>2% On Subtotal</span></h2>
+                         <h2>Total:</h2>
+                      </div>
+ 
+                      <div class="col-md-4 status">
+                         <h2>$ <span id="sub-total">1,278</span> </h2>
+                         <h2>$ <span id="tax">25</span></h2>
+                         <h2>$ <span id="grand-total">1,303</span></h2>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-md-12 pt-4 pb-4">
+                   <button onclick="window.print()" type="button" class="btn btn-success check-out">Check Out</button>
+                </div>
+             </div>
+          </div>
+       </div>
+      </div>
+   </section>
+
+
+
         <section>
             <div class="container">
                 <div class="col-md-5">
@@ -209,6 +283,8 @@
                 </div>            
         </section>
 
+
+
         <section id="subscribe">
             <div  class="container " >
                 <div class="d-flex justify-content-evenly align-items-center rounded mt-5">
@@ -230,8 +306,10 @@
               </div>
            </div>
         </div>
-          </section>
+        </section>
       
+
+
           <section class="bg-success">
             <div class="container ">
               <div class="row  bottom-navbar">
@@ -244,7 +322,7 @@
       
                 </div>
                 <div class="col-md-2 text-white">
-                  <p class="h2">Shopeguide</p>
+                  <p class="h2">ShopeGuide</p>
                   <p class="mt-5 nav-p" >About Us</p>
                   <p class="mt-1 nav-p">Delivery Information</p>
                   <p class="mt-1 nav-p">Privacy Policy</p>
@@ -271,6 +349,79 @@
     </main>
     
 
+    
+    <script>
+
+      /*=================================for delete section start=========================================*/
+      
+               //for delete first section 
+               document.getElementById('delete-button').addEventListener('click', function () {
+               document.getElementById('first-section').style.display = 'none';    
+               })
+               //for delete second section
+               document.getElementById('delete-button-2').addEventListener('click', function () {
+               document.getElementById('second-section').style.display = 'none';
+               })
+      
+      /*=====================================for delete section end====================================*/
+               
+      
+      
+      
+      
+      /*=======================function for add,reduce quantity and price button for phone & phone cover start here===========================*/
+         function productPriceUpdater(isIncrease, product) {
+                  const productQuantity = document.getElementById(product+'Count');
+                  const totalProduct = parseInt(productQuantity.value);
+                  let productNewQuantity = totalProduct;
+      
+                  if (isIncrease == true) {
+                     productNewQuantity = totalProduct + 1;
+                  }
+                  if (isIncrease == false && totalProduct > 0) {
+                     productNewQuantity = totalProduct - 1;
+                  } 
+                  productQuantity.value = productNewQuantity;
+                  console.log(productQuantity.value);
+      
+                  let productPrice = 0;
+                  if (product == 'phone') {
+                     productPrice =  1219;
+                     // productPrice = productNewQuantity * 1219;
+                  }
+                  if (product == 'case') {
+                     productPrice = 59;
+                     // productPrice = productNewQuantity * 59; 
+                  }
+      
+                 document.getElementById(product+'Price').innerText = productPrice;
+                 totalPriceUpdater();
+                 }
+         
+      
+         function totalPriceUpdater() {
+                  const phoneCountNumber = quantityUpdater('phone');
+                  const caseCountNumber = quantityUpdater('case');
+                  totalProductPrice = phoneCountNumber * 1219 + caseCountNumber * 59;
+                  document.getElementById('sub-total').innerText = totalProductPrice;
+      
+                  const tax = Math.round(totalProductPrice * .02);
+                  document.getElementById('tax').innerText = tax;
+      
+                  const grandTotal = totalProductPrice + tax ;
+                  document.getElementById('grand-total').innerText = grandTotal;
+                  }
+      
+      
+         function quantityUpdater(product) {
+                  const productCount = document.getElementById(product+'Count').value;
+                  const productCountNumber = parseInt(productCount);
+                  return productCountNumber;
+                  }
+      
+      /*========================function for add,reduce quantity and price button for phone & phone cover end here===============================*/
+            </script>
+      
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="js/bootstrap.bundle.js">
