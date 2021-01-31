@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .calculator{
+    
+    width: 280px;
+    background-color: rgb(189, 199, 196);
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 50px;
+    border: 1px solid blue;
+}
+.btn{
+    font-size: 20px;
+    width: 59px;
+    border-radius: 25px;
+    
+}
+hr{color: blue;}
+p{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <form action="" name="form" >
+            <input type="text"class="form-control fs-3" placeholder="0" name="screen">
+            <hr>
+            <div class="Button-area ">
+                <div class="Button-line p-1">
+                    <input type="button" value= "&radic;" class="btn btn-info"onclick="form.screen.value = Math.sqrt(form.screen.value)">
+                    <input type="button" value= "CE" class="btn btn-info"onclick="screen.value = ' ' ">
+                    <input type="button" value= "C" class="btn btn-info"onclick="screen.value = null">
+                    <input type="button" value=" &larr;" class="btn btn-info"onclick= "form.screen.value = form.screen.value.slice(0,-1)">
+                </div>
+                <div class="Button-line p-1">
+                    <input type="button" value= "7" class="btn btn-primary"onclick="calculate(this.value)">
+                    <input type="button" value= "8" class="btn btn-primary"onclick="calculate(this.value)">
+                    <input type="button" value= "9" class="btn btn-primary"onclick="calculate(this.value)">
+                    <input type="button" value= "+" class="btn btn-warning "onclick="calculate(this.value)">
+                </div>
+                <div class="Button-line p-1">
+                    <input type="button" value= "4" class="btn btn-primary"onclick="calculate(this.value)">
+                    <input type="button" value= "5" class="btn btn-primary"onclick="calculate(this.value)">
+                    <input type="button" value= "6" class="btn btn-primary"onclick="calculate(this.value)">
+                    <input type="button" value= "-" class="btn btn-warning"onclick="calculate(this.value)">
+                </div>
+                <div class="Button-line p-1">
+                    <input type="button" value= "1" class="btn btn-primary" onclick="calculate(this.value)">
+                    <input type="button" value= "2" class="btn btn-primary"onclick="calculate(this.value)">
+                    <input type="button" value= "3" class="btn btn-primary"onclick="calculate(this.value)">
+                    <input type="button" value= "*" class="btn btn-warning"onclick="calculate(this.value)">
+                </div>
+                <div class="Button-line p-1">
+                    <input type="button" value="0" class="btn btn-primary"onclick="calculate(this.value)">
+                    <input type="button" value= "." class="btn btn-primary "onclick="calculate(this.value)">
+                    <input type="button" value= "=" class="btn btn-success "onclick="screen.value = eval(screen.value)">
+                    <input type="button" value= "/" class="btn btn-warning "onclick="calculate(this.value)">
+                </div>
+
+            </div>
+            <hr>
+            <p>&#169; Developed by Rafi </p>
+    
+        </form>
+
+        <script>
+            function calculate(x){
+                form.screen.value = form.screen.value + x;
+            }
+        </script>
+    </div>
+</body>
+</html>

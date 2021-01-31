@@ -106,8 +106,8 @@
    function productPriceUpdater(isIncrease, product) {
             const productQuantity = document.getElementById(product+'Count');
             const totalProduct = parseInt(productQuantity.value);
-            let productNewQuantity = totalProduct;
 
+            let productNewQuantity = totalProduct;
             if (isIncrease == true) {
                productNewQuantity = totalProduct + 1;
             }
