@@ -18,9 +18,9 @@
             </div>
             <div class="col-md-6">
                 <div class="input-section half-width">
-                    <input class="form-control" type="text">
+                    <input id="pin-container" class="form-control" type="text">
                     <div class="numbers">
-                        <div class="calc-body">
+                        <div id="button-container" class="calc-body">
                             <div class="calc-button-row">
                               <div class="button">7</div>
                               <div class="button">8</div>
@@ -37,32 +37,89 @@
                               <div class="button">3</div>
                             </div>
                             <div class="calc-button-row">
-                                <div class="button"></div>
+                                <div class="button">B</div>
                                 <div class="button">0</div>
                                 <div class="button">C</div>
                             </div>
-                            <div>
-                                <button type="submit" class="submit-btn">Submit</button>
-                                <p class="action-left">3 try left</p>
-                            </div>
+                            
+                    </div>
+                    <div>
+                        <button onclick="verifyPin()"  type="submit" class="submit-btn">Submit</button>
+                        <p class="action-left">3 try left</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="notify-section">
-            <p class="notify">❌ Pin Didn't Match, Please try again</p>
-            <p class="notify">✅ Pin Matched... Secret door is opening for you</p>
+            <p id="incorrect-pin" class="notify">❌ Pin Didn't Match, Please try again</p>
+            <p id="correct-pin" class="notify">✅ Pin Matched... Secret door is opening for you</p>
         </div>
     </div>
 
 <script>
-    function generatePin() {
-        const generatePin = document.getElementById('generate-pin').value = (Math.random()*10000+'').split('.')[0];
-        console.log(generatePin);
+    //for generate pin
+    function getPin() {
+        const pin = (Math.random()*10000+ '').split('.')[0];
        
+        if (pin.length === 4) {
+            return pin;
+        }
+        else{
+            // console.log(pin);
+            return getPin();
+        }
            
         }
 
+        function generatePin() {
+            const pinInput = document.getElementById('generate-pin').value = getPin();
+            
+        }
+
+        //handler for pin container
+
+        const buttonContainer = document.getElementById('button-container').addEventListener('click', function (event){
+            const digit = event.target.innerText;
+           
+
+            if (isNaN(digit)) {
+             
+
+               if (digit === 'C') {
+                const typedInput = document.getElementById('pin-container');
+                typedInput.value = '';
+
+                if (digit === 'B') {
+                    // const typedInput = document.getElementById('pin-container');
+                    // typedInput.value = typedInput.value + digit;
+                    console.log('who');
+
+                }
+            }
+            
+            }
+          
+            else{
+                const typedInput = document.getElementById('pin-container');
+                typedInput.value = typedInput.value + digit;
+            }
+        })
+
+
+//for verify pin
+function verifyPin() {
+    const pin = document.getElementById('generate-pin').value;
+    const typedPin = document.getElementById('pin-container').value;
+    if (pin === typedPin) {
+        document.getElementById('correct-pin').style.display = 'block';
+        document.getElementById('incorrect-pin').style.display = 'none';
+    }
+    else{
+        document.getElementById('incorrect-pin').style.display = 'block';
+        document.getElementById('correct-pin').style.display = 'none';
+    }
+
+}
 </script>
 
 </body>
