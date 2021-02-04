@@ -8,33 +8,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <style>
         body {
-            background: url(images/bg-image.jpg) no-repeat;
+            background: url(images/bg-image.jpg) no-repeat ;
             background-size: cover;
+            
             height: 100vh;
         }
+        .second-section{
+            color: white;
+        }
+       
+       
     </style>
+     <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
 </head>
 
 <body>
-    <div class="container">
+    <div class="container first-section">
         <form class="col-md-6 m-auto py-5">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Enter a location for Weather ...">
+            <div class="input-group ">
+                <input id="city-container" type="text" class="form-control" placeholder="Enter a location for Weather ...">
                 <div class="input-group-append">
-                    <button type="button" class="btn btn-danger">Search</button>
+                    <button type="button" class="btn btn-danger" onclick="getWeatherUpdated()">Search</button>
                 </div>
             </div>
-        </form>
-        <div class="weather-status text-white text-center">
-            <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
-            <h1>Dhaka</h1>
-            <h3><span>38.06</span>&deg;C</h3>
-            <h1 class="lead">Clouds</h1>
-        </div>
+        </form>    
+                
+            <div class="weather-status text-white text-center second-section">
+                <img id="weather-icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+                <h1 id="city-name"> Dhaka, BD</h1>
+                <h3>Temperature : <span id="temperature">38.06</span>&deg;C</h3>
+                <h5>Weather : <span id="weather">Clouds</span></h5>
+                <h5>Wind Speed : <span id="wind"></span>20 km/h</h5>
+            </div>
+            
     </div>
+        
+
+
+    <script>
+       function getWeatherUpdated() {
+           const inputCity = document.getElementById('city-container').value;
+           
+
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputCity}&appid=063fee9fc921a91e7c80754c0bc32d12`)
+        .then(response => response.json())
+        .then(data =>{
+            console.log(data);
+            const weatherIcon = data.weather[0].icon;
+            const countryName = data.sys.country;
+            const cityName = data.name;
+            const temperature = data.main.temp;
+            const weather = data.weather[0].description;
+            const windSpeed = data.wind.speed;
+           
+
+            document.getElementById('weather-icon').src = `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`;           
+            document.getElementById('city-name').innerText = `${cityName}, ${countryName}`;
+            document.getElementById('temperature').innerText = temperature;
+            document.getElementById('weather').innerText = weather;
+            document.getElementById('wind').innerText = windSpeed;
+           
+        })
+        .catch(error => alert('Please inter valid city name'))
+       }
+       
+
+     
+    </script>
 
 </body>
 
