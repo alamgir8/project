@@ -60,7 +60,7 @@
             const weatherIcon = data.weather[0].icon;
             const countryName = data.sys.country;
             const cityName = data.name;
-            const temperature = data.main.temp;
+            const temperature = Math.round(data.main.temp-273.15);
             const weather = data.weather[0].description;
             const windSpeed = data.wind.speed;
            
