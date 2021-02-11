@@ -14,6 +14,10 @@ document.getElementById('deposit-button').addEventListener('click', function () 
     // const depositNumber = parseFloat(depositAmount);
    
     const depositNumber = getNumber('deposit-amount');
+    if (depositNumber < 0) {
+        alert("you can't input negative amount for deposit")
+        return;
+    }
     document.getElementById('deposit-amount').value = '';
 
     updatedSpanBalance('currentDeposit', depositNumber);
