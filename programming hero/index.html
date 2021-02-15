@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
-    <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16">
+    <link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16">
     <title> Programming Hero</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <section class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav id="navbar" class="navbar fixed-top navbar-expand-lg p-5">
                 <div class="container-fluid ">
-                    <img src="images/favicon.ico" alt="" class="header-images ">
+                    <img src="img/favicon.ico" alt="" class="header-images ">
                   <a class="navbar-brand" href="#">Programming Hero</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,13 +26,13 @@
                         <a class="nav-link active" aria-current="page" href="#">My Classes</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link " href="#" >Disabled</a>
+                        <a class="nav-link " href="#" ><i class="far fa-bell"></i></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#"><i class="fas fa-cart-arrow-down"></i></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link " href="#" >Disabled</a>
+                        <a class="nav-link profile-image" href="#" ><img src="img/arsi.jpg" alt=""></a>
                       </li>
                     </ul>
                     
@@ -40,6 +41,176 @@
               </nav>
         </section>
     </header>
+
+    <section class="hero-section">
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row ">
+                <div class="col-md-7 hero-main">
+                 <div class="align-items-center p-5">
+                  <h1>Complete Web-Development Course With Alamgir Hossain</h1>
+                  <p class="mt-5">একদম জিরো থেকে, কোন প্রকার পূর্ব অভিজ্ঞতা ছাড়াই একজন প্রফেশনাল ওয়েব ডেভেলপার হওয়ার জন্য যা যা লাগবে তার সবকিছুই সহজ করে গিলিয়ে খাওয়ানো হবে এই কোর্সে।</p>
+                  <button class="btn hero-button">Enroll Now</button>
+                 </div>
+                </div>
+                <div class="col-md-5 hero-images">
+                  <img src="img/slider (4).svg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-7 hero-main">
+                 <div class="align-items-center p-5">
+                  <h1>Build 10 professional projects while learning.</h1>
+                  <p class="mt-5">কোর্সের অংশ হিসেবে হাতে কলমে নতুন দশটা প্রজেক্ট (এসাইনমেন্ট) করবে তুমি। আমরা তোমার প্রজেক্ট এর ফিডব্যাক দিবো। মার্কস দিবো। যাতে প্রফেশনাল ওয়েবসাইট বানিয়েই চাকরির ইন্টারভিউতে যেতে পারো। 💪</p>
+                  <button class="btn hero-button">Enroll Now</button>
+                 </div>
+                </div>
+                <div class="col-md-5 hero-images">
+                  <img src="img/slider (3).svg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-7 hero-main">
+                  <div class="align-items-center p-5">
+                    <h1>Got stuck? We will always be there for you.</h1>
+                    <p class="mt-5">২৪ ঘন্টার মধ্যে কোর্স রিলেটেড সকল প্রশ্নের উত্তর দেয়ার জন্য চারজন প্রফেশনাল ওয়েব ডেভেলপার স্ট্যান্ডবাই থাকে (ছুটির দিন বাদে)। প্রয়োজনে গুগল মিট এ স্ক্রিনশেয়ার করে সমস্যা সমাধান করা হয়। 🥊</p>
+                    <button class="btn hero-button">Enroll Now</button>
+                  </div>
+                </div>
+                <div class="col-md-5 hero-images">
+                  <img src="img/slider (2).svg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-7 hero-main">
+                  <div class="align-items-center p-5">
+                    <h1>We will ensure our graduates are world-class web developer.</h1>
+                    <p class="mt-5">প্রত্যেক ভিডিও শেষে প্রশ্ন থাকবে। মডিউল শেষে ফাইনাল কুইজ থাকবে। টেক এওয়ে এসাইনমেন্ট থাকবে। হোমওয়ার্ক প্রফেশনাল লেভেলের না হলে, ফিডব্যাক দেয়া হবে।
+                    </p>
+                    <button class="btn hero-button">Enroll Now</button>
+                  </div>
+                </div>
+                <div class="col-md-5 hero-images">
+                  <img src="img/slider (1).svg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-7 hero-main ">
+                  <div class="align-items-center p-5">
+                    <h1>Master everything you need to become a web developer.</h1>
+                  <p class="mt-5">ফ্রন্টএন্ড (HTML, CSS, JavaScript, ES6, bootstrap, React, charting), ব্যাকএন্ড (node, express, API), ডাটাবেজ (mongodb), ক্রোম ডেভ টুল, হোস্টিং, গিটহাব, ইন্টারভিউ প্রবলেম সলভিং - সবকিছু!
+                  </p>
+                  <button class="btn hero-button">Enroll Now</button>
+                  </div>
+                </div>
+                <div class="col-md-5 hero-images">
+                  <img src="img/slider (5).svg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-7 hero-main">
+                 <div class="align-items-center p-5">
+                  <h1>Start your dream today. Conquer the world.</h1>
+                  <p class="mt-5">সো, এক্ষুণি কোর্সে এনরোল করে ঝাঁপিয়ে পড়ো। তোমার লাইফের নতুন মিশন। হার্ডওয়ার্ক করবে তুমি। গাইডলাইন আর সাপোর্ট দিবো আমরা। পারলে ঠেকা!
+                  </p>
+                  <button class="btn hero-button">Enroll Now</button>
+                 </div>
+                </div>
+                <div class="col-md-5 hero-images">
+                  <img src="img/slider (6).svg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="second-section">
+          <div class="align-items-center justify-content-center schedule-header">
+            <h2>পরবর্তী ব্যাচের সময় সূচি</h2>
+          </div>
+          <div class="row">
+            <div class="col">
+             <div class="schedule-time">
+              <h5> <i class="fas fa-calendar-check" style="color: rgb(234, 0, 255);"></i> রেজিস্ট্রেশন শুরু: জুন ১০, ২০২১ (বৃহস্পতিবার)</h5>
+              <h5> <i class="far fa-bookmark" style="color: rgb(111, 0, 255);"></i> রেজিস্ট্রেশন শেষ: জুন ২৪, ২০২১ (বৃহস্পতিবার)</h5>
+             </div>
+            </div>
+            <div class="col">
+              <div class=" schedule-time">
+                <h5> <i class="fas fa-bell" style="color: rgb(140, 0, 255);"></i> ব্যাচের ওরিয়েন্টশন: জুন ২৮, ২০২১ (সোমবার)</h5>
+                <h5> <i class="fas fa-tv" style="color: rgb(0, 102, 255);"></i> ক্লাস শুরু: জুলাই ১, ২০২১ (বৃহস্পতিবার)</h5>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5 enroll-header">
+            <h4>তুমি ৪র্থ ব্যাচে এনরোল করতে আগ্রহি হলে, ঝাঁপিয়ে পড়ো</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="third-section">
+          <div class="align-items-center justify-content-center schedule-header">
+            <h2>এই কোর্স থেকে কি কি শিখতে পারবে:</h2>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="schedule-time">
+                <h5> <i class="fas fa-calendar-check"></i> রেজিস্ট্রেশন শুরু: জুন ১০, ২০২১ (বৃহস্পতিবার)</h5>
+                <h5> <i class="far fa-bookmark"></i> রেজিস্ট্রেশন শেষ: জুন ২৪, ২০২১ (বৃহস্পতিবার)</h5>
+              </div>
+            </div>
+            <div class="col">
+              <div class="schedule-time">
+                <h5> <i class="fas fa-bell"></i> ব্যাচের ওরিয়েন্টশন: জুন ২৮, ২০২১ (সোমবার)</h5>
+              <h5> <i class="fas fa-tv"></i> ক্লাস শুরু: জুলাই ১, ২০২১ (বৃহস্পতিবার)</h5>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5 enroll-header">
+            <h4>তুমি ৪র্থ ব্যাচে এনরোল করতে আগ্রহি হলে, ঝাঁপিয়ে পড়ো</h4>
+          </div>
+        </div>
+      </div>
+    </section>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>
+
