@@ -12,13 +12,13 @@
 }
 
 
-#bg-hightlight{
+.bg-hightlight{
     border-radius: 15px;
     height: 500px;
     margin: 50px 0;
     background-color: #fceae8;
 }
-.bg-hightlight{
+.hightlight{
     height: 300px;
     background-color: #fceae8;
 }
