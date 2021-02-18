@@ -20,26 +20,26 @@
 <body>
     <header class="header">
         <section class="container">
-            <nav id="navbar" class="navbar fixed-top navbar-expand-lg p-5">
+            <nav id="navbar" class="navbar fixed-top text-center navbar-expand-sm navbar-dark ">
                 <div class="container-fluid ">
-                    <img src="img/favicon.ico" alt="" class="header-images ">
-                  <a class="navbar-brand" href="#">Programming Hero</a>
+                  <img src="img/favicon.ico" alt="" class="header-images">
+                  <span><a class="navbar-brand px-5" href="#"><h2>Programming Hero</h2></a></span>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav justify-content-end">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">My Classes</a>
+                    <ul class="navbar-nav ms-auto  mb-lg-0 nav justify-content-end">
+                      <li class="nav-item pt-2">
+                        <span><a class="nav-link active px-3  " aria-current="page" href="#"><h6>My Classes</h6></a></span>
+                      </li>
+                      <li class="nav-item pt-2">
+                        <a class="nav-link px-3" href="#" ><i class="far fa-bell fa-lg"></i></a>
+                      </li>
+                      <li class="nav-item pt-2">
+                        <a class="nav-link px-3" href="#"><i class="fas fa-cart-arrow-down fa-lg"></i></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link " href="#" ><i class="far fa-bell"></i></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-cart-arrow-down"></i></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link profile-image" href="#" ><img src="img/arsi.jpg" alt=""></a>
+                        <a class="nav-link profile-image px-3" href="#" ><img src="img/arsi.jpg" alt=""></a>
                       </li>
                     </ul>
                     
@@ -190,7 +190,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="course-info-section">
       <div class="container">
         <div class="course-criteria-header">
           <h2>এই কোর্স থেকে কি কি শিখতে পারবে:</h2>
@@ -204,7 +204,7 @@
                       <iframe width="480" height="260" src="https://www.youtube.com/embed/TSVjANr7I5o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                   </div>
-                  <div class=" d-flex justify-content-between text-center m-4">
+                  <div class=" d-flex justify-content-between text-center ">
                   <div>
                     <i class="fas fa-calendar-alt fa-lg icon-six"></i>
                     <h4 class="mt-3">3</h4>
@@ -329,26 +329,30 @@
     </section>
 
     <section class="fourth-section">
-     <div class="container ">
-      <div class="course-info h-100 py-md-3">
-        <div class="row">
-          <div class=" d-flex text-center mt-3">
-            <div class="col-md-6">
-              <i class="fas fa-star fa-3x"></i>
-              <h5 class="mt-5">এই কোর্সের বিশেষত্ব কি?</h5>
-            </div>
-            <div class="col-md-6">
-              <i class="fas fa-highlighter fa-3x"></i>
-              <h5 class="mt-5">এই কোর্স কিভাবে চলবে?</h5>
-            </div>
+     <div class="container h-100 ">
+      <div class="course-info d-flex justify-content-center">
+          <div class=" text-center mb-3 mb-md-5 d-flex justify-content-around align-items-center">
+              <div id="course-content" class="col-md-6 pt-4" onclick="displayCourseContent()">
+                <i class="fas fa-star fa-3x"></i>
+                <h5 class="pt-4">এই কোর্সের বিশেষত্ব কি?</h5>
+              </div>
+              <div id="course-time" class="col-md-6 pt-4 ">
+                <i class="fas fa-highlighter fa-3x"></i>
+                <h5 class="pt-4">এই কোর্স কিভাবে চলবে?</h5>
+              
+              </div>
           </div>
         </div>
-      </div>
-     </div>
+        </div>
+
+        <div id="display">
+
+        </div>
     </section>
+    
 
    
-    
+    <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -23,13 +23,16 @@ nav{
     object-fit: cover;
   
 }
-.header a{
-    color: #ffffff;
-    font-size: 20px;
+
+#navbar{
+    padding: 5px  100px;
+}
+#navbar h2{
+    font-size: 25px;
 }
 
 .header{
-    position: relative;
+    position: absolute;
     width: 100%;
     z-index: 3;
 }
@@ -113,9 +116,12 @@ img.header-images{
     background-color: #ff193f;
 }
 
+.course-info-section{
+    padding: 100px 0;
+}
 .course-criteria-header h2{
     text-align: center;
-    margin: 100px auto 50px;
+    margin-bottom: 50px;
     font-size: 40px;
     font-weight: 600;
 }
@@ -183,17 +189,53 @@ img.header-images{
 }
 
 .fourth-section{
+    max-width: 100%;
+    padding: 50px 0 100px 0;
     min-height: 500px;
     background-color: #ebedef;
     
 }
 .course-info{
-    padding-top: 50px;
-    margin:100px auto;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    max-width: 564px;
+    margin: auto;
+    max-width: 650px;
+    background-color: #ffffff;
     box-shadow: 0 5.64912px 14.1228px rgb(0 0 0 / 10%);
     border-radius: 10px;
+    
 }
+#course-content {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+#course-time{
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#display{
+    padding: 100px auto;
+    margin: auto;
+    border-radius: 10px;
+    max-width: 90%;
+}
+
+.icon-twelve{
+   
+    padding: 30px;
+    background-color:gold;
+    color: #fff;
+}
+
+.icon-thirteen{
+    
+    padding: 30px;
+    background-color: #39fc;
+    color: #fff;
+}
+.course-information{
+    box-shadow: 0 30px 80px 0 rgb(55 84 170 / 10%);
+    border-radius: 16px;
+}
+
