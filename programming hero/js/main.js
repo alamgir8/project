@@ -1,17 +1,18 @@
 
 function displayCourseContent() {
     const content = document.getElementById('display');
-    
+    document.getElementById('course-content').style.color = ' rgb(253, 0, 42)';
+    document.getElementById('course-time').style.color = ' black';   
 
     const description = `
     
-            <div class= ''>
+            <div class= ' container'>
                 <div class="row ">
-                    <div class="col-md-6 d-flex  px-5 pt-2 ">
-                        <div class='card w-100 course-information'>
+                    <div class="col-md-6 ">
+                        <div class=' course-information'>
                             <div class=' d-flex justify-content-center  align-items-center p-4'>
-                                <div class= 'd-flex col-md-4 justify-content-center  align-items-center'>
-                                <span class= 'icon-thirteen rounded-circle'><i class="fas fa-laptop fa-5x"></i></span>
+                                <div class= 'd-flex col-md-3 justify-content-center  align-items-center'>
+                                <span class= 'icon-thirteen'><i class="fas fa-laptop "></i></span>
                                 </div>
                                 <div class='mt-4 '>
                                     <h4>এইটা কমপ্লিট ওয়েব ডেভেলপমেন্ট এর কোর্স:</h4>
@@ -20,11 +21,11 @@ function displayCourseContent() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 d-flex px-5 pt-2">
-                    <div class='card w-100 course-information'>
+                    <div class="col-md-6 ">
+                    <div class=' course-information'>
                         <div class='d-flex justify-content-center align-items-center p-4'>
                             <div class= 'd-flex col-md-3 justify-content-center  align-items-center'>
-                            <span class='icon-twelve rounded-circle'><i class="fas fa-user-graduate fa-5x"></i></i></span>
+                            <span class='icon-twelve '><i class="fas fa-user-graduate "></i></i></span>
                             </div>
                             <div class='mt-4 '>
                                     <h4>আনলিমিটেড সাপোর্ট:</h4>
@@ -33,12 +34,12 @@ function displayCourseContent() {
                         </div>
                     </div>
                     </div>
-                    <div class="row ">
-                    <div class="col-md-6 d-flex px-5 pt-2">
-                        <div class='card w-100 course-information'>
+                
+                    <div class="col-md-6 ">
+                        <div class=' course-information'>
                             <div class=' d-flex justify-content-center align-items-center p-4'>
-                                <div class= 'd-flex col-md-4 justify-content-center align-items-center'>
-                                <span class= 'icon-thirteen rounded-circle'><i class="fas fa-users fa-5x"></i></i></span>
+                                <div class= 'd-flex col-md-3 justify-content-center align-items-center'>
+                                <span class= 'icon-fourteen '><i class="fas fa-users"></i></i></span>
                                 </div>
                                 <div class='mt-4 '>
                                     <h4>স্পেশাল ইন্টারভিউ প্রিপারেশন গ্রূপ:</h4>
@@ -47,11 +48,11 @@ function displayCourseContent() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 d-flex px-5 pt-2">
-                    <div class='card w-100 course-information'>
+                    <div class="col-md-6 ">
+                    <div class=' course-information'>
                         <div class='d-flex justify-content-center align-items-center p-4'>
-                            <div class= 'd-flex col-md-4 justify-content-center align-items-center'>
-                            <span class='icon-twelve rounded-circle'><i class="fas fa-id-card fa-5x fa-fw"></i></span>
+                            <div class= 'd-flex col-md-3 justify-content-center align-items-center'>
+                            <span class='icon-fifteen '><i class="fas fa-id-card "></i></span>
                             </div>
                             <div class='mt-4 '>
                                     <h4>চাকরির জন্য সিভি পাঠানো</h4>
@@ -59,15 +60,154 @@ function displayCourseContent() {
                             </div>
                         </div>
                     </div>
-                    </div>
-    
-
-                   
+                    </div> 
             </div>  
-    
-    `
 
+    `
     content.innerHTML = description;
    
+   
  
+};
+
+function displayCourseDescription() {
+    const content = document.getElementById('display');
+    document.getElementById('course-time').style.color = ' rgb(253, 0, 42)';
+    document.getElementById('course-content').style.color = ' black';    
+
+    const description = `
+    
+            <div class= ' container'>
+                <div class="row ">
+                    <div class="col-md-6 ">
+                        <div class='course-description'>
+                            <div class=' d-flex justify-content-center  align-items-center p-4'>
+                                <div class= 'd-flex col-md-3 justify-content-center  align-items-center'>
+                                <h1>১</h1>
+                                </div>
+                                <div class='mt-4 '>
+                                    <p>প্রতিদিন রাত ১০.০০ এর সময় (বাংলাদেশ সময়) একটা মডিউল রিলিজ দেয়া হবে। তোমার কাজ হবে ২৪ ঘন্টার মধ্যে সব ভিডিও দেখে শেষ করে ফেলা। মোটামুটি ১.৫ থেকে ২ ঘন্টার মতো ভিডিও থাকবে।
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                    <div class='course-description'>
+                        <div class='d-flex justify-content-center align-items-center p-4'>
+                            <div class= 'd-flex col-md-3 justify-content-center  align-items-center'>
+                            <h1>২</h1>
+                            </div>
+                            <div class='mt-4 '>
+                                    <p>তবে শুধু ভিডিও দেখে গেলে কাজ হবে না। ভিডিও এর কোন টপিক বুঝতে না পারলে গুগল বা ইউটিউবে সার্চ দিয়ে আরো অন্য টিউটোরিয়াল দেখতে হবে। প্রত্যেক ভিডিও শেষে একাধিক প্রশ্ন থাকবে।
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                
+                    <div class="col-md-6 ">
+                        <div class='course-description'>
+                            <div class=' d-flex justify-content-center align-items-center p-4'>
+                                <div class= 'd-flex col-md-3 justify-content-center align-items-center'>
+                                <h1>৩</h1>
+                                </div>
+                                <div class='mt-4 '>
+                                    <p>
+                                    কোথাও না বুঝলে বা আটকে গেলে। আমাদের ফেইসবুক গরূপে প্রশ্ন করতে পারবে। তোমার যেকোন প্রশ্নের উত্তর কোর্স চলাকালীন সময়ে ২৪ ঘন্টার মধ্যে উত্তর দেয়া হবে।
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                    <div class='course-description'>
+                        <div class='d-flex justify-content-center align-items-center p-4'>
+                            <div class= 'd-flex col-md-3 justify-content-center align-items-center'>
+                            <h1>৪</h1>
+                            </div>
+                            <div class='mt-4 '>
+                                    <p>কোর্স এক টানা বারো সপ্তাহ চলবে। কোন ডেটিংয়ের ব্রেক, সূর্য না উঠার ব্রেক, বা পাশের বাড়ির ট্যাংকি লিক হয়ে যাওয়ার জন্য কোন গ্যাপ বা বাড়তি সময় দেয়া হবে না।
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div> 
+                    <div class="col-md-6 ">
+                        <div class='course-description'>
+                            <div class=' d-flex justify-content-center align-items-center p-4'>
+                                <div class= 'd-flex col-md-3 justify-content-center align-items-center'>
+                                <h1>৫</h1>
+                                </div>
+                                <div class='mt-4 '>
+                                    <p>
+                                    যারা নিদৃস্ট সময়ের মধ্যে ডেডিকেটেডভাবে লেগে থেকে কোর্স শেষ করবে। এসাইনমেন্ট সঠিক সময়ে সাবমিট করবে তাদের থেকে SCIC এর জন্য সিলেক্ট করা হবে। SCIC এর জন্য হার্ডওয়ার্ক ছাড়া আলাদা কোন ফি নেই।
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                    <div class='course-description'>
+                        <div class='d-flex justify-content-center align-items-center p-4'>
+                            <div class= 'd-flex col-md-3 justify-content-center align-items-center'>
+                            <h1>৬</h1>
+                            </div>
+                            <div class='mt-4 '>
+                                    <p>
+                                    আমাদের কোর্স প্রি-রেকর্ডেড (ভিডিও আগে থেকে রেকর্ড করা থাকবে)। অর্থাৎ লাইভ ক্লাস হবে না। তাই রাত ১০.০০ এর পরে যেকোন সময়ের মধ্যে ভিডিও দেখে নিলেই চলবে। প্রতিদিন গড়ে ৬ থেকে ৮ ঘন্টা সময় দিতে হবে। মিনিমাম ৪ থেকে ৬ ঘন্টা সময় দিতেই হবে।
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div> 
+                    <div class="col-md-6 ">
+                        <div class='course-description'>
+                            <div class=' d-flex justify-content-center align-items-center p-4'>
+                                <div class= 'd-flex col-md-3 justify-content-center align-items-center'>
+                                <h1>৭</h1>
+                                </div>
+                                <div class='mt-4 '>
+                                    <p>
+                                    পাঁচ ছয়টা মডিউল পরে। যখন এসাইনমেন্ট থাকবে তখন এসাইনমেন্ট এর সাইজ অনুসারে তোমাকে এক দিন, দুই দিন বা তিন দিন সময় দেয়া হবে। এসাইনমেন্ট সঠিক সময়ে জমা দিলে ৬০ মার্কস। একদিন দেরি করলে ৫০ মার্কস। তার চাইতেও বেশি সময় নিলে ৩০ মার্কস।
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                    <div class='course-description'>
+                        <div class='d-flex justify-content-center align-items-center p-4'>
+                            <div class= 'd-flex col-md-3 justify-content-center align-items-center'>
+                            <h1>৮</h1>
+                            </div>
+                            <div class='mt-4 '>
+                                    <p>
+                                    দরকার হলে মাঝে মধ্যে ফেইসবুক গরূপে লাইভ এসে প্রশ্নের উত্তর বা কনসেপ্ট ব্যাখ্যা করা হবে। প্রয়োজনে কোর্সের মধ্যে নতুন মডিউল যোগ করা হবে। যাতে তুমি পরিপূর্ন ওয়েব ডেভেলপার হয়ে উঠো এই একটা মাত্র কোর্স থেকে।
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div> 
+            </div>  
+
+    `
+    content.innerHTML = description;
+   
+   
+ 
+}
+
+function displayFAQ(id) {
+    const faq = document.getElementById(id);
+    
+
+    if (faq.style.display === "none") {
+        faq.style.display = "block";
+        
+
+      } else {
+        faq.style.display = "none";
+      }
+
 }
