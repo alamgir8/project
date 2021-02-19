@@ -200,14 +200,27 @@ function displayCourseDescription() {
 
 function displayFAQ(id) {
     const faq = document.getElementById(id);
-    
+
 
     if (faq.style.display === "none") {
         faq.style.display = "block";
-        
+      }
 
-      } else {
+      else {
         faq.style.display = "none";
       }
+
+      toggle(id, true);
+}
+
+const toggle = (id, show) =>{
+    const faqTwo = document.getElementById(id);
+    if (show) {
+        faqTwo.classList.remove('d-none');
+        console.log(faqTwo);
+    }
+  
+    
+    
 
 }
