@@ -3,12 +3,11 @@ body{
     margin: 0;
     padding: 0;
     
-    font-family: 'Hind Siliguri', sans-serif;
 }
 
 .hero-section h1{
     color: #ffffff;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
 }
@@ -19,40 +18,29 @@ body{
 }
 nav{
     background: linear-gradient(107.07deg,#684efb -6.64%,#5a00dd 89.11%);
-    vertical-align: middle;
-    object-fit: cover;
-  
 }
-
+.header{
+    margin-bottom: 100px;
+}
 
 #navbar h2{
     font-size: 25px;
 }
 
-.header{
-    position: absolute;
-    width: 100%;
-    z-index: 3;
-}
 .hero-section{
-    width: 100%;
-    min-height: 500px;
+    min-width: 100%;
+    padding-bottom: 50px;
+    min-height: 600px;
     background: linear-gradient(107.07deg,#684efb -6.64%,#5a00dd 89.11%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    position: relative;
+    
 }
-.hero-main{
-    min-height: 500px;
-    margin-top: 250px;
-    padding: 250px auto;
-}
-.hero-images{
-    margin-top: 250px;
-}
+
+
 .hero-button{
-    padding: 10px 20px;
+    padding: 15px 35px;
     margin-top: 20px;
     color: #ffffff;
     font-size: 17px;
@@ -70,24 +58,34 @@ nav{
     border-radius: 50%;
     
 }
+.course-info-section{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
 
 .second-section{
-    margin: 50px 50px;
-    min-height: 400px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
     padding: 20px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 6px 6px lightgray;
+    
+}
+.course-schedule-section{
+    border-radius: 10px;
+    padding: 20px;
 }
 .schedule-header h2{
-    text-align: center;
     margin: 20px 0 100px 0;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
 }
 
 .schedule-time h5{
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 .enroll-header h4{
@@ -124,7 +122,7 @@ nav{
 .course-criteria-header h2{
     text-align: center;
     margin-bottom: 50px;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
 }
 .course-criteria{
@@ -157,7 +155,7 @@ nav{
 
 .iframe{
     text-align: center;
-    margin: 20px 40px;
+    margin: 20px;
 }
 
 .icon-nine{
@@ -297,6 +295,12 @@ nav{
     padding: 100px auto;
     margin: 100px auto;
 }
+.fifth-section h1{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
 
 .fourth-image img{
     width: 100%;
@@ -327,6 +331,10 @@ nav{
 }
 
 .sixth-section{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
     max-width: 100%;
     height: fit-content;
     padding: 100px auto;
