@@ -24,9 +24,7 @@ nav{
   
 }
 
-#navbar{
-    padding: 5px  100px;
-}
+
 #navbar h2{
     font-size: 25px;
 }
@@ -37,6 +35,8 @@ nav{
     z-index: 3;
 }
 .hero-section{
+    width: 100%;
+    min-height: 500px;
     background: linear-gradient(107.07deg,#684efb -6.64%,#5a00dd 89.11%);
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,13 +58,15 @@ nav{
     font-size: 17px;
     background-color: #5a00dd;
 }
-img.header-images{
-    width: 4%;
+.header-images img{
+    width: 50px;
     padding-right: 10px;
 }
 .profile-image img{
     width: 40px;
     height: 40px;
+    line-height: 40px;
+    text-align: center;
     border-radius: 50%;
     
 }
@@ -297,8 +299,8 @@ img.header-images{
 }
 
 .fourth-image img{
-    width: 580px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
    
 }
