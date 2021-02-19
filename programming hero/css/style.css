@@ -228,8 +228,8 @@ nav{
 
 .icon-twelve{
     font-size: 60px;
-    width: 120px;
-    height: 120px;
+    min-width: 120px;
+    min-height: 120px;
     text-align: center;
     line-height: 120px;
     border-radius: 50%;
@@ -276,7 +276,7 @@ nav{
     box-shadow: 0 5px 14px rgb(0 0 0  20%);
     border-radius: 10px;
     margin-top: 20px;
-    height: 250px;
+    height: 280px;
     width: 100%;
 }
 .course-description{

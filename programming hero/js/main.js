@@ -11,7 +11,7 @@ function displayCourseContent() {
                     <div class="col-md-6 ">
                         <div class=' course-information'>
                             <div class=' d-flex justify-content-center  align-items-center p-4'>
-                                <div class= 'd-flex col-md-3 justify-content-center  align-items-center'>
+                                <div class= 'd-flex col-md-3'>
                                 <span class= 'icon-thirteen'><i class="fas fa-laptop "></i></span>
                                 </div>
                                 <div class='mt-4 '>
@@ -24,7 +24,7 @@ function displayCourseContent() {
                     <div class="col-md-6 ">
                     <div class=' course-information'>
                         <div class='d-flex justify-content-center align-items-center p-4'>
-                            <div class= 'd-flex col-md-3 justify-content-center  align-items-center'>
+                            <div class= 'd-flex col-md-3 '>
                             <span class='icon-twelve '><i class="fas fa-user-graduate "></i></i></span>
                             </div>
                             <div class='mt-4 '>
@@ -38,12 +38,14 @@ function displayCourseContent() {
                     <div class="col-md-6 ">
                         <div class=' course-information'>
                             <div class=' d-flex justify-content-center align-items-center p-4'>
-                                <div class= 'd-flex col-md-3 justify-content-center align-items-center'>
+                                <div class= 'd-flex col-md-3 '>
                                 <span class= 'icon-fourteen '><i class="fas fa-users"></i></i></span>
                                 </div>
+                                <div class='col-md-7'>
                                 <div class='mt-4 '>
                                     <h4>স্পেশাল ইন্টারভিউ প্রিপারেশন গ্রূপ:</h4>
                                     <p>যারা ডেইলি ডেইলি কাজ করবে। প্রতিদিন ৬ থেকে ১০ ঘন্টা সময় দিবে। জানপ্রাণ দিয়ে সিরিয়াসভাবে কোর্স নিদৃস্ট সময়ের মধ্যে ফিনিশ করবে। তাদের নিয়ে তৈরি করা SCIC (Super Charged Interviewee Club) । এইটা ৪ থেকে ৬ সপ্তাহের স্পেশাল ট্রেনিং। যেটার জন্য আলাদা কোন ফি নাই। একটাই যোগ্যতা: সিরিয়াস হার্ডওয়ার্ক করে নিদৃস্ট সময়ের মধ্যে কোর্স ফিনিশ করা।</p>
+                                </div>
                                 </div>
                             </div>
                         </div>
