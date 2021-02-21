@@ -29,7 +29,7 @@
 <body>
     <header class="header">
         <section class="container">
-            <nav id="navbar" class="navbar fixed-top text-center navbar-expand-sm navbar-dark ">
+            <nav id="navbar" class="navbar fixed-top text-center navbar-expand-md navbar-dark ">
                 <div class="container">
                   <div class="header-images">
                     <img src="img/favicon.ico" alt="" class=" img-fluid">
@@ -49,10 +49,29 @@
                       <li class="nav-item pt-2">
                         <a class="nav-link px-3" href="#"><i class="fas fa-cart-arrow-down fa-lg"></i></a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link profile-image px-3" href="#" ><img src="img/profile.png" alt=""></a>
-                      </li>
                     </ul>
+                    
+                    <div class="dropdown">
+                      <a class="btn nav-link profile-image " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                         <img src="img/profile.png" alt="">
+                      </a>
+                    
+                      <ul class="dropdown-menu dropdown dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                       <div class="px-5 pb-2">
+                          <li class="profile-image-two text-center"> <img src="img/profile.png" alt=""></li>
+                          <li><a class="dropdown-item text-center view-profile py-2 my-3" href="#">View Profile</a></li>
+                      </div>
+                        <div class="pe-5 me-4">
+                          <li><a class="dropdown-item" href="term-and-condition.html"><i class="fas fa-lock"></i>  Terms of the service</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="fas fa-tag"></i>  Order history</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="fas fa-trophy"></i>  Leader Board</a></li>
+                          <li><a class="dropdown-item" href="#faq"><i class="fas fa-question-circle"></i>  Internal FAQ</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>  Logout</a></li>
+                        </div>
+                        
+                      
+                      </ul>
+                    </div>
                     
                   </div>
                 </div>
@@ -741,7 +760,7 @@
          </div>
      </section>
  
-     <section class="sixth-section">
+     <section id="faq" class="sixth-section">
        <div class="container">
           <div class="text-center text-white py-5">
              <h1>কোর্স সম্পর্কিত সাধারণ জিজ্ঞাসা</h1>
@@ -1050,6 +1069,57 @@
              </div>
           </div>
        </div>
+    </section>
+
+    
+    <section class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-6">
+            <div class="py-5">
+              <a href="#"><h2 class="text-white">Programming Hero</h2></a>
+            </div>
+          <div class="text-white">
+            <p class="pt-3"><i class="fas fa-map-marker-alt pe-2"></i>Level-4, 34, Awal Centre, Banani, Dhaka</p>
+            <p><i class="fas fa-envelope pe-2"></i>Official: <a href="#" class="text-white">ahossain38900@gmail.com</a></p>
+            <p><i class="fas fa-mobile-alt pe-2"></i>Helpline : 01957930032 (Available : 09:00am to 11:00pm)</p>
+            <p><a href="#"><img src="img/playstore.png" alt=""></a></p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3">
+            <div class="text-white pt-5 mt-5 ">
+              <p>
+                <a href="#" class="text-white">About Us</a>
+              </p>
+              <p>
+                <a href="#" class="text-white">Success</a>
+              </p>
+              <p>
+                <a href="#" class="text-white">Refund Policy</a>
+              </p>
+              <p>
+                <a href="#" class="text-white">Terms and Condition</a>
+              </p>
+              <p>
+                <a href="#" class="text-white">Privacy Policy</a>
+              </p>
+              <p >
+                <a href="#" class="text-white"><i class="fab fa-facebook-square fa-lg pe-2"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-twitter-square fa-lg pe-2"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg pe-2"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-youtube-square fa-lg"></i></a>
+              </p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3">
+            <div class="mt-5 pt-5 text-center">
+              <img src="img/payment.png" alt="payment-images" class="img-fluid">
+            </div>
+        </div>
+      </div>
+      <footer class="text-white text-center py-3 mt-5">
+        <p>Design Copyright &copy; By Alamgir Hossain</p>
+      </footer>
     </section>
 
    

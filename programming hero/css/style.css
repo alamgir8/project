@@ -38,6 +38,15 @@ nav{
     
 }
 
+.dropdown{
+    border-radius: 10px  !important;
+}
+
+.view-profile{
+    background-color: #ff19b2;
+    border-radius: 30px;
+    color: #fff;
+}
 
 .hero-button{
     padding: 15px 35px;
@@ -55,6 +64,13 @@ nav{
     height: 40px;
     line-height: 40px;
     text-align: center;
+    border-radius: 50%;
+    
+}
+.profile-image-two img{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
     border-radius: 50%;
     
 }
@@ -330,4 +346,25 @@ nav{
 .display-faq-two{
     width: 100%;
 
+}
+
+.footer-section{
+    min-height: 300px;
+    background: linear-gradient( #6247fc, #6d0efa);
+    
+}
+
+.footer-section p{
+    font-size: 17px;
+    font-weight: 500;
+}
+.footer-section a{
+    text-decoration: none;
+}
+
+.term-and-contdition{
+    font-family: 'Baloo Da 2', cursive;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
 }
