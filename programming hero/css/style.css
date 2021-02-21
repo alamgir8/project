@@ -1,10 +1,48 @@
 
 body{
     margin: 0;
-    padding: 0;
-    
+    padding: 0;  
 }
 
+/* Header section style start */
+nav{
+    background: linear-gradient(107.07deg,#684efb -6.64%,#5a00dd 89.11%);
+}
+.header{
+    margin-bottom: 100px;
+}
+#navbar h2{
+    font-size: 25px;
+}
+.header-images img{
+    width: 50px;
+    padding-right: 10px;
+}
+.profile-image img{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;  
+}
+.profile-image-two img{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+}
+.dropdown{
+    border-radius: 10px  !important;
+}
+.view-profile{
+    background-color: #ff19b2;
+    border-radius: 30px;
+    color: #fff;
+}
+/* Header section style end */
+
+
+/* Hero section slider style start */
 .hero-section h1{
     color: #ffffff;
     font-size: 35px;
@@ -16,17 +54,6 @@ body{
     font-size: 18px;
     font-weight: 500;
 }
-nav{
-    background: linear-gradient(107.07deg,#684efb -6.64%,#5a00dd 89.11%);
-}
-.header{
-    margin-bottom: 100px;
-}
-
-#navbar h2{
-    font-size: 25px;
-}
-
 .hero-section{
     min-width: 100%;
     padding-bottom: 50px;
@@ -34,20 +61,8 @@ nav{
     background: linear-gradient(107.07deg,#684efb -6.64%,#5a00dd 89.11%);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
-    
+    background-position: bottom;  
 }
-
-.dropdown{
-    border-radius: 10px  !important;
-}
-
-.view-profile{
-    background-color: #ff19b2;
-    border-radius: 30px;
-    color: #fff;
-}
-
 .hero-button{
     padding: 15px 35px;
     margin-top: 20px;
@@ -55,39 +70,16 @@ nav{
     font-size: 17px;
     background-color: #5a00dd;
 }
-.header-images img{
-    width: 50px;
-    padding-right: 10px;
-}
-.profile-image img{
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50%;
-    
-}
-.profile-image-two img{
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    border-radius: 50%;
-    
-}
-.course-info-section{
-    font-family: 'Baloo Da 2', cursive;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px;
-}
+/* Hero section slider style end */
 
+
+/* second section new course staring time style start */
 .second-section{
     font-family: 'Baloo Da 2', cursive;
     font-style: normal;
     font-weight: 500;
     line-height: 26px;
-    padding: 20px;
-    
+    padding: 20px; 
 }
 .course-schedule-section{
     border-radius: 10px;
@@ -98,12 +90,20 @@ nav{
     font-size: 35px;
     font-weight: 600;
 }
-
 .schedule-time p{
     font-size: 16px;
     font-weight: 600;
 }
+/* second section new course staring time style end */
 
+
+/* Course information section, what we teaching style start */
+.course-info-section{
+    font-family: 'Baloo Da 2', cursive;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
 .enroll-button h5{
     color: #ffffff;
     padding: 20px 15px;
@@ -135,7 +135,6 @@ nav{
     background-color: #ff193f;
     margin-right: 15px;
 }
-
 .course-info-section{
     padding: 100px 0;
 }
@@ -171,12 +170,10 @@ nav{
     background-color:rgb(255, 187, 0);
     border-radius: 10px;
 }
-
 .iframe{
     text-align: center;
     margin: 20px;
 }
-
 .icon-nine{
     color: #ffff;
     background-color: #f30a0a;
@@ -195,14 +192,14 @@ nav{
     padding: 5px;
     border-radius: 5px;
 }
-
 .button{
     padding: 5px 200px;
     border-radius: 10px;
 }
+/* Course information section, what we teaching style end */
 
 
-
+/* Course exception with how course will maintain or continue style start */
 .fourth-section{
     max-width: 100%;
     padding: 50px 0 100px 0;
@@ -216,19 +213,15 @@ nav{
     background-color: #ffffff;
     box-shadow: 0 5px 14px rgb(0 0 0  20%);
     border-radius: 10px;
-    
 }
 #course-content {
     margin-right: 20px;
     cursor: pointer;
 }
-
-
 #course-time{
     cursor: pointer;
     margin-left: 20px;
 }
-
 #display{
     padding: 100px auto;
     margin: 50px auto;
@@ -242,10 +235,7 @@ nav{
 .content-images img{
     width: 110px;
     height: 110px;
-   
 }
-
-
 
 .course-information{
     font-family: 'Baloo Da 2', cursive;
@@ -273,7 +263,10 @@ nav{
     font-size: 100px;
     color: darkgray;
 }
+/* Course exception with how course will maintain or continue sa end */
 
+
+/* How many module have and what about the module style start */
 .fifth-section{
     max-width: 100%;
     min-height: 500px;
@@ -286,18 +279,15 @@ nav{
     font-weight: 500;
     line-height: 26px;
 }
-
 .fourth-image img{
     width: 100%;
     height: 100%;
-    border-radius: 10px;
-   
+    border-radius: 10px; 
 }
 .fifth-card{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 7px 5px 14px darkgray;
-  
 }
 .button-two{
     width: 100%;
@@ -308,29 +298,27 @@ nav{
     outline: none;
     box-shadow: none;
 }
-
 .fifth-card-two{
     width: 100%;
     max-height: 500px;
     overflow: auto;
 }
 
+/*  How many module have and what about the module style end */
+
+
+/* Frequently ask question section style start */
 .sixth-section{
     font-family: 'Baloo Da 2', cursive;
     font-style: normal;
     font-weight: 500;
     line-height: 26px;
-    max-width: 100%;
-    height: fit-content;
-    padding: 100px auto;
-    margin: 100px auto;
     background: linear-gradient(107.07deg,#684efb -6.64%,#5a00dd 89.11%);
 }
 .plus-minus{
     cursor: pointer;
     
 }
-
 .plus-minus{
     border-radius: 10px;
     background: linear-gradient(107.07deg,#4020f8 -6.64%,#5400d3 89.11%);
@@ -342,18 +330,53 @@ nav{
     margin: auto;
     background: linear-gradient(107.07deg,#492bf3 -6.64%,#4e00c4 89.11%);
 }
-
 .display-faq-two{
     width: 100%;
-
 }
+/* Frequently ask question section style end */
 
-.footer-section{
-    min-height: 300px;
-    background: linear-gradient( #6247fc, #6d0efa);
+/* ten project showing sections style start */
+.ten-project-section{
+    min-height: 700px;
+    background-color: #e2eefa;
+    font-family: 'Baloo Da 2', cursive;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+.ten-project-section h1{
+    font-weight: 800;
+}
+.project-card{
+    border-radius: 10px;
+}
+.project-card a{
+    text-decoration: none;
+   
+}
+.html-button{
+    background:linear-gradient(45deg,#ff193f,#ff35b4);
+    color: #fff;
+    border-radius: 10px;
+    padding: 3px 10px;
+}
+.css-button{
+    background: linear-gradient(45deg,#5a00dd,#684efb);
+    color: #fff;
+    border-radius: 10px;
+    padding: 3px 12px;
+}
+button:hover{
     
 }
 
+/* ten project showing section style end */
+
+/* Footer section style start */
+.footer-section{
+    min-height: 300px;
+    background: linear-gradient( #6247fc, #6d0efa);   
+}
 .footer-section p{
     font-size: 17px;
     font-weight: 500;
@@ -361,10 +384,14 @@ nav{
 .footer-section a{
     text-decoration: none;
 }
+/* Footer section style end */
 
-.term-and-contdition{
+
+/* Term and condition section style start */
+.term-and-condition{
     font-family: 'Baloo Da 2', cursive;
     font-style: normal;
     font-weight: 500;
     line-height: 26px;
 }
+/* term and condition section style end */
