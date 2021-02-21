@@ -2,6 +2,8 @@
 body{
     margin: 0;
     padding: 0;  
+    position: relative;
+    height: 100%;
 }
 
 /* Header section style start */
@@ -348,28 +350,172 @@ nav{
     font-weight: 800;
 }
 .project-card{
-    border-radius: 10px;
+    text-align: center;
+    min-width: 500px;
+    padding: 50px 250px;
 }
-.project-card a{
-    text-decoration: none;
+.project-details{
+  
+    min-width: 500px;
+    padding: 50px 50px;
+    text-align: start;
+    overflow: hidden;
+
+}
+.project-image{
+    border-radius: 10px;
    
 }
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+    
+    border-radius: 10px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+ 
+}
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: #007aff;
+  }
+
 .html-button{
     background:linear-gradient(45deg,#ff193f,#ff35b4);
     color: #fff;
-    border-radius: 10px;
+    border: none;
+    border-radius: 30px;
     padding: 3px 10px;
+    cursor: pointer;
 }
 .css-button{
     background: linear-gradient(45deg,#5a00dd,#684efb);
     color: #fff;
-    border-radius: 10px;
+    border: none;
+    border-radius: 30px;
     padding: 3px 12px;
+    cursor: pointer;
 }
-button:hover{
-    
+.bootstrap-button{
+    background: linear-gradient(45deg,#2eb1ea,#2eb1ea);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 18px;
+    cursor: pointer;
 }
-
+.react-button{
+    background: linear-gradient(45deg,#5a00dd,#3d1cf7);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 12px;
+    cursor: pointer;
+}
+.node-button{
+    background: linear-gradient(45deg,#1ab3f5,#04b0fa);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 12px;
+    cursor: pointer;
+}
+.mongoDB-button{
+    background:linear-gradient(45deg,#ff193f,#d40187);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 18px;
+    cursor: pointer;
+}
+.heroku-button{
+    background: linear-gradient(45deg,#2eb1ea,#0075a7);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 18px;
+    cursor: pointer;
+}
+.basic-react-button{
+    background: linear-gradient(45deg,#5a00dd,#3d1cf7);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 12px;
+    cursor: pointer;
+}
+.debugging-button{
+    background: linear-gradient(45deg,#52f7b8,#0075a7);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 18px;
+    cursor: pointer;
+}
+.dev-tool-button{
+    background: linear-gradient(45deg,#6ef752,#36bef8);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 18px;
+    cursor: pointer;
+}
+.react-router-button{
+    background: linear-gradient(45deg,#03f317,#4af5ca);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 18px;
+    cursor: pointer;
+}
+.material-ui-button{
+    background: linear-gradient(45deg,#fdcf00,#f1d989);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 18px;
+    cursor: pointer;
+}
+.firebase-button{
+    background: linear-gradient(45deg,#2100dd,#7a65ee);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 12px;
+    cursor: pointer;
+}
+.google-map-button{
+    background: linear-gradient(45deg,#710088,#7a65ee);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 12px;
+    cursor: pointer; 
+}
 /* ten project showing section style end */
 
 /* Footer section style start */
