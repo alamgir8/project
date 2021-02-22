@@ -37,6 +37,9 @@ nav{
 .dropdown{
     border-radius: 10px  !important;
 }
+#dropdown-nav a{
+    color: black;
+}
 .view-profile{
     background-color: #ff19b2;
     border-radius: 30px;
