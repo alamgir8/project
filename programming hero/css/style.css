@@ -43,6 +43,8 @@ nav{
 .view-profile{
     background-color: #ff19b2;
     border-radius: 30px;
+    margin-left: 18px;
+    padding: 10px 25px;
     color: #fff;
 }
 /* Header section style end */
