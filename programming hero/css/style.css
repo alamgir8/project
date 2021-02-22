@@ -10,8 +10,9 @@ body{
 nav{
     background: linear-gradient(107.07deg,#684efb -6.64%,#5a00dd 89.11%);
 }
-.header{
-    margin-bottom: 100px;
+#navbar a{
+    text-decoration: none;
+    color: #ffffff;
 }
 #navbar h2{
     font-size: 25px;
