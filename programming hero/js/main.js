@@ -11,10 +11,10 @@ function displayCourseContent() {
         <div class="col-md-6 mt-4">
             <div class='course-information'>
                 <div class='d-flex justify-content-center flex-column flex-lg-row align-items-center'>
-                    <div class='text-center content-images p-3'>
+                    <div class='text-center content-images p-3 pt-5'>
                     <img src="img/first.png" alt="">
                     </div>
-                    <div class='p-3'>
+                    <div class='p-3 pt-5'>
                         <h5>এইটা কমপ্লিট ওয়েব ডেভেলপমেন্ট এর কোর্স:</h5>
                         <p>শূন্য থেকে একজন জুনিয়র ওয়েব ডেভেলপার হিসেবে চাকরি পাওয়ার জন্য যা যা লাগে তার সবকিছুই ধরে ধরে শিখানো হয়েছে এই কোর্সে। সো, এই কোর্স ভালোভাবে ফিনিশ করলে ওয়েব ডেভেলপমেন্ট সম্পর্কে আর কোথাও কোন কোর্স না করেই ইন্টার্ন বা চাকরির চেষ্টা শুরু করে দিতে পারবে।</p>
                     </div>
