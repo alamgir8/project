@@ -202,17 +202,25 @@ function displayCourseDescription() {
    
  
 }
-
-function displayFAQ(id) {
+// function for toggle display faq
+function displayFAQ(id, id2, id3) {
     const faq = document.getElementById(id);
-
-
+    let minus = document.getElementById(id2);
+    let plus = document.getElementById(id3);
+    
     if (faq.style.display === "none") {
         faq.style.display = "block";
+        minus.innerHTML = `
+        <i class="fas fa-minus fa-2x"></i>
+        `
+        plus.innerHTML = '';
       }
 
       else {
         faq.style.display = "none";
+        plus.innerHTML = `
+        <i class="fas fa-plus fa-2x"></i>`
+        minus.innerHTML = '';
       }
 
       toggle(id, true);
@@ -222,16 +230,15 @@ const toggle = (id, show) =>{
     const faqTwo = document.getElementById(id);
     if (show) {
         faqTwo.classList.remove('d-none');
-        console.log(faqTwo);
+    
     }
   
-    
-    
 
 }
 
 
 
+// function for swiper
 
 var swiper = new Swiper('.swiper-container', {
     pagination: {
