@@ -26,7 +26,7 @@ function App() {
         <Product product={products[0]}></Product>
         <Product product={products[1]}></Product>
         <Product product={products[2]}></Product>
-        <Product product={products[3]}></Product>
+        
        
       </header>
     </div>
