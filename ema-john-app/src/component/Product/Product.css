@@ -1,0 +1,21 @@
+
+.product{
+    display: flex;
+    border-bottom: 1px solid grey;
+    margin: 25px;
+}
+
+
+.product-details{
+  margin: 25px 25px 0 25px; 
+  text-align: justify;
+}
+
+.add-button{
+    background-color:rgb(255, 174, 0);
+    padding: 5px 20px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
