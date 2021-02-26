@@ -3,24 +3,19 @@ import {  } from "./Cart.css";
 
 const Cart = (props) => {
    const cart = props.cart;
+   console.log(cart);
 //    const total = cart.reduce((total, pd) => total + pd.price, 0); //calculating by reduce method
 
 let total = 0;
+let shipping = 0;
 for (let i = 0; i < cart.length; i++) {
     const product = cart[i];
     total = total + product.price;
+    shipping = shipping + product.shipping;
     
 }
-let shipping = 0;
-if (total > 35) {
-    shipping = 0;
-}
-else if (total > 15) {
-    shipping = 4.99;
-}
-else if (total > 0) {
-    shipping = 12.99;
-}
+
+
 
 const tax = total/10;
 const grandTotal = total + shipping + tax;

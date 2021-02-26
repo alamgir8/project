@@ -10,6 +10,12 @@
   margin: 25px 25px 0 25px; 
   text-align: justify;
 }
+.product-details h3{
+  color: rgb(62, 62, 250);
+}
+.product-details p{
+  font-size: 17px;
+}
 
 .add-button{
     background-color:rgb(255, 174, 0);

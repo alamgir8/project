@@ -5,8 +5,8 @@ import Product from '../Product/Product';
 import {  } from "./Shop.css";
 
 const Shop = () => {
-    const twentyProduct = fakeData.slice(0, 30);
-    const [products, setProducts] = useState(twentyProduct)
+    const tenProduct = fakeData.slice(0, 10);
+    const [products, setProducts] = useState(tenProduct)
     const [cart, setCart] = useState([]);
 
     const addProductHandler = (product) => {

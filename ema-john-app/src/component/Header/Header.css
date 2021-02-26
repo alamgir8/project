@@ -1,19 +1,34 @@
 
-.header img{
-    width: 300px;
+.nav-image img{
+    justify-self: start;;
+    width: 100px;
+    color: #fff;
+    margin-right: 20px;
+}
+.header{
+    background-color:lightgrey;
+}
+.navbar{
+    display: inline-flex;
+
 }
 
+.nav-link{
+    display: flex;
+    margin: 20px;
+    margin-left: 20px;
+    float: right;
+}
 nav{
-    background-color: black;
+   
     line-height: 40px;
     font-size: 20px;
 }
 nav a{
     text-decoration: none;
-    color: #fff;
-    margin-right: 20px;
     padding: 5px;
+    color: black;
 }
 nav a:hover{
-    background-color: darkgray;
+    color: rgb(243, 10, 126);
 }
