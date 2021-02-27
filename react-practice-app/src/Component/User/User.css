@@ -1,0 +1,14 @@
+
+.container{
+    display:flex;
+    justify-content:center;
+    border: 1px solid black;
+}
+
+.user-image{
+    margin-right: 20px;
+}
+
+.user-details{
+   
+}
