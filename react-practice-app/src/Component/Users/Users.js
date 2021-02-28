@@ -10,25 +10,26 @@ const Users = () => {
         setUsers(fakeData);
     }, []);
 
-    const {userCart, setUserCart} = useState([]);
+    const [userCart, setUserCart] = useState([]);
     const addUserHandler = (user) => {
-        const newUser = [...userCart, user];
-        setUserCart(newUser);
-        console.log('i am clicked');
+        const newUserCart = [...userCart, user];
+        setUserCart(newUserCart);
 
+       
     }
+    
     return (
         <div className="user-container">
             <div className="user-info">
                 <h1>This is user Information</h1>
                 {
-                    fakeData.map(users => <User user={users} addProductHandler={addUserHandler}></User>)
+                    fakeData.map(users => <User user={users} addUserHandler={addUserHandler} key={users.id}></User>)
                     
                 }
             </div>
             <div className="user-cart">
-                <UserCart user={userCart}></UserCart>
-                <h2>This is user Added section</h2>
+                <UserCart userCart={userCart}></UserCart>
+                
             </div>
         </div>
     );
