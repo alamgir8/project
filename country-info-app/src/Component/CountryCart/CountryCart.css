@@ -1,0 +1,8 @@
+
+.country-cart{
+    border: 2px solid black;
+    position:sticky;
+    top: 0;
+    padding: 50px;
+    border-radius:10px;
+}

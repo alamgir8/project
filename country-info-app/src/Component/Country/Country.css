@@ -1,0 +1,18 @@
+
+.country-container{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius:10px;
+}
+
+.country-container img{
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+
+}
+.country-image{ 
+    text-align: center;
+    border-radius: 10px;
+    background-color: lightblue;
+}

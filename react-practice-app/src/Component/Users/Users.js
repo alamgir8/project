@@ -10,6 +10,7 @@ const Users = () => {
         setUsers(fakeData);
     }, []);
 
+    
     const [userCart, setUserCart] = useState([]);
     const addUserHandler = (user) => {
         const newUserCart = [...userCart, user];
