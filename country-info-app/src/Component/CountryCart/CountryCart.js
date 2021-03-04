@@ -16,7 +16,7 @@ const CountryCart = (props) => {
    
 
     return (
-        <div className="country-cart">
+        <div className="country-cart text-warning">
             <h2>Total population : {population}</h2>
         </div>
     );

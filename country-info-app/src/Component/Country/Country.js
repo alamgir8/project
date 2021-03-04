@@ -19,6 +19,7 @@ const Country = (props) => {
             </div>
             <div>
                 <button onClick={() => addCountryHandler(props.country)}>Add This Country</button>
+               
             </div>
         </div>
     );
