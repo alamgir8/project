@@ -11,8 +11,8 @@ const Header = () => {
                 </div>
                 <div className='nav-link'>
                     <a href="/shop">Shop</a>
-                    <a href="/order-review">Order Review</a>
-                    <a href="/manage-inventory">Manage Inventory</a>
+                    <a href="/review">Order Review</a>
+                    <a href="/inventory">Manage Inventory</a>
                 </div>
             </nav>
         </header>
