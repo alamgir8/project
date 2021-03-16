@@ -25,7 +25,7 @@ nav{
     font-size: 20px;
 }
 nav a{
-    text-decoration: none;
+    text-decoration: none !important;
     padding: 5px;
     color: black;
 }

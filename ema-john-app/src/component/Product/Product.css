@@ -10,6 +10,11 @@
   margin: 25px 25px 0 25px; 
   text-align: justify;
 }
+
+.product-details a {
+  text-decoration: none !important;
+  font-size: 25px;
+}
 .product-details h3{
   color: rgb(62, 62, 250);
 }
