@@ -12,7 +12,7 @@ const Shop = () => {
     const tenProduct = fakeData.slice(0, 10);
     const [products, setProducts] = useState(tenProduct)
     const [cart, setCart] = useState([]);
-
+    document.title = 'Shop'
 
     useEffect(() => {
         const savedCart = getDatabaseCart();
@@ -52,6 +52,9 @@ const Shop = () => {
     return (
         <div className='twin-container'>
            <div className='product-container'>
+               {
+                   products.length === 0 && <p>Loading....</p>
+               }
                {
                    products.map(pd => <Product product={pd} addProductHandler={addProductHandler} showAddToCart={true} key={pd.key}></Product>)
                }

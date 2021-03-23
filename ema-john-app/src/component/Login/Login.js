@@ -88,6 +88,7 @@ import {createUserWithEmailAndPassword, handleFbSignIn, handleGoggleSignIn, hand
           e.preventDefault();
 
         }
+    
       
         return (
           <div>

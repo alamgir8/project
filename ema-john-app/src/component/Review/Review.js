@@ -13,6 +13,7 @@ const Review = () => {
     const handleProceedCheckOut = () =>{
         history.push("/shipment")
     }
+    document.title = 'Order Review'
    
     const [cart, setCart]= useState([]);
     const removeProduct = (productKey) => {

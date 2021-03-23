@@ -4,6 +4,7 @@ import {  } from "./ReviewItem.css";
 const ReviewItem = (props) => {
     const { name, quantity, key, price} = props.product;
     console.log(quantity);
+    document.title = 'Product Review'
     return (
         <div className='container my-5'>
             <h4 className='text-justify text-info'>{name}</h4>
