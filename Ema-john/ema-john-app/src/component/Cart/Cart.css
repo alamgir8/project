@@ -1,0 +1,28 @@
+
+
+.cart-details{
+    text-align: justify;
+    margin: 30px auto;
+    
+}
+.price p{
+    display: inline-block;
+    width: 50%;
+}
+.cart-details p{
+    margin: 0;
+}
+
+.total-price{
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+button{
+    background-color: goldenrod;
+    padding: 5px 20px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+}

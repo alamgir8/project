@@ -1,0 +1,32 @@
+
+.product{
+    display: flex;
+    border-bottom: 1px solid grey;
+    margin: 25px;
+}
+
+
+.product-details{
+  margin: 25px 25px 0 25px; 
+  text-align: justify;
+}
+
+.product-details a {
+  text-decoration: none !important;
+  font-size: 25px;
+}
+.product-details h3{
+  color: rgb(62, 62, 250);
+}
+.product-details p{
+  font-size: 17px;
+}
+
+.add-button{
+    background-color:rgb(255, 174, 0);
+    padding: 5px 20px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
