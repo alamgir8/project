@@ -1,0 +1,17 @@
+.info-primary{
+    background-color: #1CC7C1;
+    height: 120px;
+    border-radius: 5px;
+}
+.info-second{
+    background-color: #3A4256;
+    height: 120px;
+    border-radius: 5px;
+}
+.info-icon img{
+    width: 40px;
+    color: #fff;
+}
+.info-card{
+    padding: 0 5px !important;
+}

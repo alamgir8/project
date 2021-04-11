@@ -1,0 +1,11 @@
+.appointment-section{
+    margin: 200px 0;
+    background-color: #3A4256;
+    background-image: url(./../../../img/bgChair.png);
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+.appointment-section img{
+    transform: translateY(-130px);
+    
+}

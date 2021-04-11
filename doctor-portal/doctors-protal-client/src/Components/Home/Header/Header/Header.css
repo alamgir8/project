@@ -1,0 +1,16 @@
+.header {
+    min-height:770px;
+    position:relative;
+    background-image: url(./../../../../img/bgChair.png);
+    background-position: cover;
+}
+.header::after{
+    height:700px;
+    content:' ';
+    position: absolute;
+    top: 0;
+    width: 30%;
+    right: 0;
+    z-index: -1;
+    background-color: #3A4256;
+}

@@ -1,0 +1,12 @@
+.contact-section{
+    background-color: #3A4256;
+    background-image: url(./../../../img/bgChair.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sub-header{
+    color:#00b1c9
+}
+.main-header{
+    color: #32394b;
+}
