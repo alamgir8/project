@@ -5,11 +5,8 @@ const TestimonialDetails = (props) => {
     const {quote, img, name, from} = props.testimonial;
     return (
         <div className="col-md-4">
-            <Card className='p-2'>
-            <Card.Body>
-                <Card.Text>
-                {quote}
-                </Card.Text>
+            <div className='card p-3'>
+               <p> {quote}</p>
                  <div className="row pt-3">
                      <div className="d-flex align-items-center justify-content-center m-auto">
                         <div className="col-md-7 col-sm-7">
@@ -21,8 +18,7 @@ const TestimonialDetails = (props) => {
                         </div>
                      </div>
                 </div>
-            </Card.Body>
-            </Card>
+            </div>
         </div>
     );
 };

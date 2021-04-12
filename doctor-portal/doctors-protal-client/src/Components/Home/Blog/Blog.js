@@ -34,14 +34,16 @@ const blogData = [
 const Blog = () => {
     return (
         <div id='blog' className='blog-section my-5'>
-            <div className='py-4'>
-                <h5 className='sub-header'>OUR BLOG</h5>
-                <h2 className='main-header'>From Our News</h2>
-            </div>
-            <div className='row'>
-                {
-                    blogData.map(blog => <BlogDetails blog={blog} key={blog.id}></BlogDetails>)
-                }
+            <div className="container">
+                <div className='py-4'>
+                    <h5 className='sub-header'>OUR BLOG</h5>
+                    <h2 className='main-header'>From Our News</h2>
+                </div>
+                <div className='row'>
+                    {
+                        blogData.map(blog => <BlogDetails blog={blog} key={blog.id}></BlogDetails>)
+                    }
+                </div>
             </div>
         </div>
     );

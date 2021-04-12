@@ -4,16 +4,17 @@ import Blog from '../Blog/Blog';
 import Contact from '../Contact/Contact';
 import DentalCare from '../DentalCare/DentalCare';
 import Doctor from '../Doctor/Doctor';
-import Footer from '../Footer/Footer';
+import Footer from './../../Shared/Footer/Footer';
 import Header from '../Header/Header/Header';
 import Services from '../Services/Services';
 import Testimonial from '../Testimonial/Testimonial';
 
 
 
+
 const Home = () => {
     return (
-        <div className='container'>
+        <div>
            <Header/>
            <Services/>
            <DentalCare/>

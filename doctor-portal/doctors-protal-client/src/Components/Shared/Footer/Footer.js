@@ -2,12 +2,12 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div id='footer' classNameName='footer-section mt-5'>
+        <div id='footer' className='footer-section mt-5'>
             <footer className="bg-light text-lg-start">
                 <div className="container p-4">
                     <div className="row">
                     <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h3 className="">Doctors Portal</h3>
+                        <h3 className="sub-header">Doctors Portal</h3>
 
                         <ul className="list-unstyled my-4">
                         <li>
@@ -29,7 +29,7 @@ const Footer = () => {
 
             
                     <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 className="mt-2">Service</h5>
+                        <h5 className="mt-2 sub-header">Service</h5>
 
                         <ul className="list-unstyled my-4">
                         <li>
@@ -48,7 +48,7 @@ const Footer = () => {
                     </div>
                   
                     <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 className="mt-2">About Us</h5>
+                        <h5 className="mt-2 sub-header">About Us</h5>
 
                         <ul className="list-unstyled my-4">
                         <li>
@@ -67,7 +67,7 @@ const Footer = () => {
                     </div>
                   
                     <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 className="mt-2">Our Social Media</h5>
+                        <h5 className="mt-2 sub-header">Our Social Media</h5>
 
                         <ul className="list-unstyled my-4">
                         <li>

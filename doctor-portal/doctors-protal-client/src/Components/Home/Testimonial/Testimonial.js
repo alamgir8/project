@@ -30,16 +30,17 @@ const testimonialData = [
 const Testimonial = () => {
     return (
         <div className='testimonial-section my-4'>
-            <div>
-                <h5 className='sub-header'>TESTIMONIAL</h5>
-                <h2 className='main-header'>What's our patient says</h2>
-            </div>
-            <div className='row my-5'>
-                {
-                    testimonialData.map(testimonial => <TestimonialDetails testimonial={testimonial} key={testimonial.id}></TestimonialDetails>)
-                }
-            </div>
-            
+            <div className="container">
+                <div>
+                    <h5 className='sub-header'>TESTIMONIAL</h5>
+                    <h2 className='main-header'>What's our patient says</h2>
+                </div>
+                <div className='row my-5'>
+                    {
+                        testimonialData.map(testimonial => <TestimonialDetails testimonial={testimonial} key={testimonial.id}></TestimonialDetails>)
+                    }
+                </div>
+            </div>           
         </div>
     );
 };

@@ -27,15 +27,17 @@ const servicesData = [
 const Services = () => {
     return (
         <div id='service' className='service-section'>
+           <div className="container">
             <div className='my-5 text-center'>
-                <h5 className='sub-header'>OUR SERVICES</h5>
-                <h2 className='main-header'>Service We Provide</h2>
-            </div>
-            <div className="row">
-                {
-                    servicesData.map(service => <ServiceDetails service={service} key={service.id}></ServiceDetails>)
-                }
-            </div>
+                    <h5 className='sub-header'>OUR SERVICES</h5>
+                    <h2 className='main-header'>Service We Provide</h2>
+                </div>
+                <div className="row">
+                    {
+                        servicesData.map(service => <ServiceDetails service={service} key={service.id}></ServiceDetails>)
+                    }
+                </div>
+           </div>
         </div>
     );
 };
