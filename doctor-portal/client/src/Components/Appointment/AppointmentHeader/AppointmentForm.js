@@ -18,8 +18,23 @@ const customStyles = {
 const AppointmentForm = ({book, modalIsOpen, closeModal, date}) => {
     const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = data => {
-    console.log(data)
-    closeModal();
+      data.service = book.title;
+      data.date = date;
+      data.created = new Date();
+
+      fetch('http://localhost:8000/addAppointment', {
+          method: 'POST',
+          headers: {'content-type': 'application/json'},
+          body: JSON.stringify(data)
+      })
+      .then(res => res.json())
+      .then(success => {
+          if (success) {
+              closeModal();
+              alert('Your appointment created successfully!')
+          }
+      })
+   
   };
  
 

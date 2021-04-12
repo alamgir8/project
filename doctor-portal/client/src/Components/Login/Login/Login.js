@@ -96,10 +96,10 @@ const Login = () => {
                                 <form onSubmit={handleSubmit}>
                                     <div className="p-4">
                                         <div className="py-2">
-                                            <input onBlur={handleBlur} className="form-control" name='email' type="text" placeholder="Email"  required/>
+                                            <input onBlur={handleBlur} className="form-control" name='email' defaultValue='alamgir@gmail.com' type="text" placeholder="Email"  required/>
                                         </div>
                                         <div className="py-2">
-                                            <input onBlur={handleBlur} className="form-control" name='password' type="password" placeholder="Password" required/>
+                                            <input onBlur={handleBlur} className="form-control" name='password' defaultValue='allahuakber001' type="password" placeholder="Password" required/>
                                         </div>
                                         <p className='text-danger'>{user.error}</p>
                                         <div className="py-3 text-center">
