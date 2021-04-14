@@ -1,0 +1,12 @@
+.appointment-by-date-section{
+   
+    height: 100%;
+    min-height: 100vh;
+}
+.bg-light-blue{
+    background: #e0fcf8;
+}
+.bg-select{
+    background-color: #13D0D0 !important;
+    color: #fff !important;
+}

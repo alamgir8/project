@@ -1,32 +1,25 @@
-import React from 'react';
-import drOne from './../../../img/dr.png';
-import drTwo from './../../../img/dr.png';
-import drThree from './../../../img/dr.png'
+import React, { useEffect, useState } from 'react';
+import Doctors from './Doctors';
 
 const Doctor = () => {
+    const [doctors, setDoctors] = useState([])
+
+    useEffect(() => {
+        fetch('http://localhost:8000/doctors')
+        .then(res => res.json())
+        .then(data => setDoctors(data))
+    }, [])
+  
     return (
         <div className="doctor-section">
             <div className="container">
                 <div className='py-5'>
                     <h3 className='text-center sub-header'>Our Doctors</h3>
-                <div className='row py-5 text-center'>
-                <div className="col-md-4">
-                    <img src={drOne} alt="doctor one" className='img-fluid w-75'/>
-                    <h6 className='pt-3'>Dr. Kevin</h6>
-                    <p>+0088018382121</p>
                 </div>
-                <div className="col-md-4">
-                    <img src={drTwo} alt="doctor one" className='img-fluid w-75'/>
-                    <h6 className='pt-3'>Dr. Kooper</h6>
-                    <p>+0088011352121</p>
-                </div>
-                <div className="col-md-4">
-                    <img src={drThree} alt="doctor one" className='img-fluid w-75'/>
-                    <h6 className='pt-3'>Dr. Sherlok</h6>
-                    <p>+0088019532121</p>
-                </div>
-                
-                </div>
+                <div className='row'>
+                    {
+                        doctors.map(doctor => <Doctors doctor={doctor} key={doctor._id}></Doctors>)
+                    }           
                 </div>
             </div>
         </div>

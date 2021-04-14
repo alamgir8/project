@@ -40,16 +40,16 @@ const bookingData = [
         space: '12 SPACE AVAILABLE'
     }
 ]
-const Booking = ({date}) => {
+const Booking = ({selectDate}) => {
     return (
         <div className='booking-section'>
             <div className="container">
                 <div className='text-center sub-header my-5'>
-                    <h2>Available Appointments on {date.toDateString()}</h2>
+                    <h2>Available Appointments on {selectDate}</h2>
                 </div>
                 <div className="row">
                     {
-                        bookingData.map(book => <BookingDetails book={book} key={book.id} date={date}></BookingDetails>)
+                        bookingData.map(book => <BookingDetails book={book} key={book.id} selectDate={selectDate}></BookingDetails>)
                     }
                 </div>
             </div>            

@@ -5,6 +5,7 @@ import './Navigation.css'
 
 const Navigation = () => {
     const [loginUser, setLoginUser] = useContext(userContext);
+    
     return (
         <div className="nav-section">
             <div className="container">
@@ -25,7 +26,7 @@ const Navigation = () => {
                                         <a href="#blog" className="nav-link mx-3 h6 nav-header">Blog</a>
                                     </li>
                                     <li className="nav-item pt-2">
-                                        <a href="#footer" className="nav-link mx-3 h6 nav-header">About Us</a>
+                                    <Link to="/dashboard" className="nav-link mx-3 h6 nav-header"> Dashboard </Link>
                                     </li>
                                     <li className="nav-item pt-2">
                                         <a href="#contact" className="nav-link mx-3 h6 nav-header">Contact</a>

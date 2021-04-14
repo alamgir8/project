@@ -15,16 +15,16 @@ const customStyles = {
     }
   };
 
-const AppointmentForm = ({book, modalIsOpen, closeModal, date}) => {
+const AppointmentForm = ({book, modalIsOpen, closeModal, selectDate}) => {
     const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = data => {
       data.service = book.title;
-      data.date = date;
-      data.created = new Date();
+      data.date = selectDate.toLocaleString();
+      data.created = new Date().toLocaleString();
 
       fetch('http://localhost:8000/addAppointment', {
           method: 'POST',
-          headers: {'content-type': 'application/json'},
+          headers: {'Content-Type':'application/json'},
           body: JSON.stringify(data)
       })
       .then(res => res.json())
@@ -33,6 +33,9 @@ const AppointmentForm = ({book, modalIsOpen, closeModal, date}) => {
               closeModal();
               alert('Your appointment created successfully!')
           }
+      })
+      .catch(err => {
+          console.log(err);
       })
    
   };
@@ -51,7 +54,7 @@ const AppointmentForm = ({book, modalIsOpen, closeModal, date}) => {
             
                         <div className="text-center ">
                             <h4 className='sub-header'>{book.title}</h4>
-                            <p className='text-secondary'>{date.toDateString()}</p>
+                            <p className='text-secondary'>{selectDate}</p>
                         </div>
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <div className="p-4">
