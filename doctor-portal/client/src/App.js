@@ -21,37 +21,37 @@ function App() {
   return (
         <userContext.Provider value={[loginUser, setLoginUser]}>
             <Router>
-          <Switch>
-            <Route path='/home'>
-              <Home/>
-            </Route>
-            <Route exact path='/'>
-              <Home/>
-            </Route>
-            <Route path='/login'>
-              <Login/>
-            </Route>
-            <Route path='/signup'>
-              <SignUp/>
-            </Route>
-            <Route path='/appointment'>
-              <Appointment/>
-            </Route>
-            <Route path='/dashboard/appointments'>
-              <Appointments/>
-            </Route>
-            <Route path='/dashboard/patients'>
-              <AllPatients/>
-            </Route>
-            <Route path='/dashboard/addDoctor'>
-              <AddDoctor/>
-            </Route>
-            <PrivateRoute path='/dashboard'>
-              <Dashboard/>
-            </PrivateRoute>
-           
-          </Switch>
-        </Router>
+                  <Switch>
+                      <Route path='/home'>
+                          <Home/>
+                      </Route>
+                      <Route exact path='/'>
+                          <Home/>
+                      </Route>
+                      <Route path='/login'>
+                          <Login/>
+                      </Route>
+                      <Route path='/signup'>
+                        <SignUp/>
+                      </Route>
+                      <Route path='/appointment'>
+                          <Appointment/>
+                      </Route>
+                      <Route path='/dashboard/appointments'>
+                          <Appointments/>
+                      </Route>
+                      <Route path='/dashboard/patients'>
+                          <AllPatients/>
+                      </Route>
+                      <Route path='/dashboard/addDoctor'>
+                          <AddDoctor/>
+                      </Route>
+                      <PrivateRoute path='/dashboard'>
+                          <Dashboard/>
+                      </PrivateRoute>
+                    
+                  </Switch>
+              </Router>
         </userContext.Provider>
   );
 }

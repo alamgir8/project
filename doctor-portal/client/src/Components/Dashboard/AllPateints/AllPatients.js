@@ -5,10 +5,11 @@ const AllPatients = () => {
     const [appointment, setAppointment] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:8000/appointments')
+        fetch('https://doctors-portal-official.herokuapp.com/appointments')
         .then(res => res.json())
         .then(data => setAppointment(data))
     }, [])
+    
     return (
         <div className='all-patients-section'>
             <div className="container">

@@ -17,9 +17,9 @@ import Navigation from '../../Shared/Navigation/Navigation';
 
 const Login = () => {
     const [loginUser, setLoginUser] = useContext(userContext);
-  const history = useHistory();
-  const location = useLocation();
-  const { from } = location.state || { from: { pathname: "/" } };
+    const history = useHistory();
+    const location = useLocation();
+    const { from } = location.state || { from: { pathname: "/" } };
     const [user, setUser] = useState({
         name:'',
         email: '',

@@ -12,7 +12,7 @@ const AddDoctor = () => {
             email: data.email,
             imageURL: imageURL
         }
-        fetch('http://localhost:8000/addDoctor', {
+        fetch('https://doctors-portal-official.herokuapp.com/addDoctor', {
             method: 'POST',
             headers: {'Content-type' : 'application/json'},
             body: JSON.stringify(doctorInfo)
