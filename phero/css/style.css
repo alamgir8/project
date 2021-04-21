@@ -1,0 +1,549 @@
+
+body{
+    margin: 0;
+    padding: 0;  
+    position: relative;
+    height: 100%;
+}
+
+/* Header section style start */
+nav{
+    background: linear-gradient(107.07deg,#684efb -6.64%,#5a00dd 89.11%);
+}
+#navbar a{
+    text-decoration: none;
+    color: #ffffff;
+}
+#navbar h2{
+    font-size: 25px;
+}
+.header-images img{
+    width: 50px;
+    padding-right: 10px;
+}
+.profile-image img{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;  
+}
+.profile-image-two img{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+}
+.dropdown{
+    border-radius: 10px  !important;
+}
+#dropdown-nav a{
+    color: black;
+}
+.view-profile{
+    background-color: #ff19b2;
+    border-radius: 30px;
+    margin-left: 18px;
+    padding: 10px 25px;
+    color: #fff;
+}
+/* Header section style end */
+
+
+/* Hero section slider style start */
+.hero-section h1{
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.hero-section p{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.hero-section{
+    min-width: 100%;
+    padding-bottom: 50px;
+    min-height: 600px;
+    background: linear-gradient(107.07deg,#684efb -6.64%,#5a00dd 89.11%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;  
+}
+.hero-button{
+    padding: 15px 35px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 17px;
+    background-color: #5a00dd;
+}
+/* Hero section slider style end */
+
+
+/* second section new course staring time style start */
+.second-section{
+    font-family: 'Baloo Da 2', cursive;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    padding: 20px; 
+}
+.course-schedule-section{
+    border-radius: 10px;
+    padding: 20px;
+}
+.schedule-header h3{
+    margin: 20px 0 80px 0;
+    font-size: 35px;
+    font-weight: 600;
+}
+.schedule-time p{
+    font-size: 16px;
+    font-weight: 600;
+}
+/* second section new course staring time style end */
+
+
+/* Course information section, what we teaching style start */
+.course-info-section{
+    font-family: 'Baloo Da 2', cursive;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+.enroll-button h5{
+    color: #ffffff;
+    padding: 20px 15px;
+    border-radius: 35px;
+    background:linear-gradient(45deg,#5a00dd,#684efb);;
+}
+.enroll-card{
+    border-radius: 20px;
+}
+
+.icon{
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 8px;
+}
+.icon-one{
+    background-color: #5a00dd;
+    margin-right: 15px;
+}
+.icon-two{
+    background-color: #fc5e51;
+    margin-right: 15px;
+}
+.icon-three{
+    background-color: #ff9c35;
+    margin-right: 15px;
+}
+.icon-four{
+    background-color: #ff193f;
+    margin-right: 15px;
+}
+.course-info-section{
+    padding: 100px 0;
+}
+.course-criteria-header h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+.course-criteria{
+    font-size: 18px;
+    padding: 20px;
+}
+.extra-text p{
+    font-size: 16px;
+}
+
+.icon-five{
+    color: tomato;
+    size: 20px;
+}
+.icon-six{
+    padding: 20px;
+    background-color: tomato;
+    border-radius: 10px;
+}
+.icon-seven{
+    padding: 20px;
+    background-color: #39f;
+    border-radius: 10px;
+}
+.icon-eight{
+    padding: 20px;
+    background-color:rgb(255, 187, 0);
+    border-radius: 10px;
+}
+.iframe{
+    text-align: center;
+    margin: 20px;
+}
+.icon-nine{
+    color: #ffff;
+    background-color: #f30a0a;
+    padding: 5px;
+    border-radius: 5px;
+}
+.icon-ten{
+    color: #ffff;
+    background-color: #f53030;
+    padding: 5px;
+    border-radius: 5px;
+}
+.icon-eleven{
+    color: #ffff;
+    background-color: #fac106;
+    padding: 5px;
+    border-radius: 5px;
+}
+.button{
+    padding: 5px 200px;
+    border-radius: 10px;
+}
+/* Course information section, what we teaching style end */
+
+
+/* Course exception with how course will maintain or continue style start */
+.fourth-section{
+    max-width: 100%;
+    padding: 50px 0 100px 0;
+    min-height: 500px;
+    background-color: #c0dbf5;
+    
+}
+.course-info{
+    margin: auto;
+    max-width: 650px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 14px rgb(0 0 0  20%);
+    border-radius: 10px;
+}
+#course-content {
+    margin-right: 20px;
+    cursor: pointer;
+}
+#course-time{
+    cursor: pointer;
+    margin-left: 20px;
+}
+#display{
+    padding: 100px auto;
+    margin: 50px auto;
+    border-radius: 10px;
+    max-width: 90%;
+}
+#display h1{
+    font-size: 100px;
+    color: darkgray;
+}
+.content-images img{
+    width: 110px;
+    height: 110px;
+}
+
+.course-information{
+    font-family: 'Baloo Da 2', cursive;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 14px rgb(0 0 0  20%);
+    border-radius: 10px;
+    height: 100%;
+}
+.course-description{
+    font-family: 'Baloo Da 2', cursive;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 14px rgb(0 0 0  20%);
+    border-radius: 10px;
+    height: 100%;
+}
+
+.course-description-header h1{
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 100px;
+    color: darkgray;
+}
+/* Course exception with how course will maintain or continue sa end */
+
+
+/* How many module have and what about the module style start */
+.fifth-section{
+    max-width: 100%;
+    min-height: 500px;
+    padding: 100px auto;
+    margin: 100px auto;
+}
+.fifth-section h1{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+.fourth-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; 
+}
+.fifth-card{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 7px 5px 14px darkgray;
+}
+.button-two{
+    width: 100%;
+    padding: 14px 0;
+    border-radius: 40px;
+}
+.btn:focus:focus{
+    outline: none;
+    box-shadow: none;
+}
+.fifth-card-two{
+    width: 100%;
+    max-height: 500px;
+    overflow: auto;
+}
+
+/*  How many module have and what about the module style end */
+
+
+/* Frequently ask question section style start */
+.sixth-section{
+    font-family: 'Baloo Da 2', cursive;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    background: linear-gradient(107.07deg,#684efb -6.64%,#5a00dd 89.11%);
+}
+.plus-minus{
+    cursor: pointer;
+    
+}
+.plus-minus{
+    border-radius: 10px;
+    background: linear-gradient(107.07deg,#4020f8 -6.64%,#5400d3 89.11%);
+}
+.section-faq{
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px 0;
+    margin: auto;
+    background: linear-gradient(107.07deg,#492bf3 -6.64%,#4e00c4 89.11%);
+}
+.display-faq-two{
+    width: 100%;
+}
+/* Frequently ask question section style end */
+
+/* ten project showing sections style start */
+.ten-project-section{
+    min-height: 700px;
+    background-color: #e2eefa;
+    font-family: 'Baloo Da 2', cursive;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+.ten-project-section h1{
+    font-weight: 800;
+}
+.project-card{
+    text-align: center;
+    min-width: 500px;
+    padding: 50px 250px;
+}
+.project-details{
+  
+    min-width: 500px;
+    padding: 50px 50px;
+    text-align: start;
+    overflow: hidden;
+
+}
+.project-image{
+    border-radius: 10px;
+   
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+    
+    border-radius: 10px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+ 
+}
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: #007aff;
+  }
+
+.html-button{
+    background:linear-gradient(45deg,#ff193f,#ff35b4);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+.css-button{
+    background: linear-gradient(45deg,#5a00dd,#684efb);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 12px;
+    cursor: pointer;
+}
+.bootstrap-button{
+    background: linear-gradient(45deg,#2eb1ea,#2eb1ea);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 18px;
+    cursor: pointer;
+}
+.react-button{
+    background: linear-gradient(45deg,#5a00dd,#3d1cf7);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 12px;
+    cursor: pointer;
+}
+.node-button{
+    background: linear-gradient(45deg,#1ab3f5,#04b0fa);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 12px;
+    cursor: pointer;
+}
+.mongoDB-button{
+    background:linear-gradient(45deg,#ff193f,#d40187);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 18px;
+    cursor: pointer;
+}
+.heroku-button{
+    background: linear-gradient(45deg,#2eb1ea,#0075a7);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 18px;
+    cursor: pointer;
+}
+.basic-react-button{
+    background: linear-gradient(45deg,#5a00dd,#3d1cf7);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 12px;
+    cursor: pointer;
+}
+.debugging-button{
+    background: linear-gradient(45deg,#52f7b8,#0075a7);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 18px;
+    cursor: pointer;
+}
+.dev-tool-button{
+    background: linear-gradient(45deg,#6ef752,#36bef8);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 18px;
+    cursor: pointer;
+}
+.react-router-button{
+    background: linear-gradient(45deg,#03f317,#4af5ca);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 18px;
+    cursor: pointer;
+}
+.material-ui-button{
+    background: linear-gradient(45deg,#fdcf00,#f1d989);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 18px;
+    cursor: pointer;
+}
+.firebase-button{
+    background: linear-gradient(45deg,#2100dd,#7a65ee);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 12px;
+    cursor: pointer;
+}
+.google-map-button{
+    background: linear-gradient(45deg,#710088,#7a65ee);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px 12px;
+    cursor: pointer; 
+}
+/* ten project showing section style end */
+
+/* Footer section style start */
+.footer-section{
+    min-height: 300px;
+    background: linear-gradient( #6247fc, #6d0efa);   
+}
+.footer-section p{
+    font-size: 17px;
+    font-weight: 500;
+}
+.footer-section a{
+    text-decoration: none;
+}
+/* Footer section style end */
+
+
+/* Term and condition section style start */
+.term-and-condition{
+    font-family: 'Baloo Da 2', cursive;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+/* term and condition section style end */
